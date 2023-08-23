@@ -1,0 +1,54 @@
+//-------------------------------COLORS---------------------------------
+$primaryColor: #1C2336;
+$primaryDark:  #fafafa;
+$primaryLight: #FAFAFA;
+
+$secondaryColor: #1DA7E2;
+$secondaryColorDark: #1e86b3;
+$secondaryColorLight: #1ebbff;
+
+$accentColor: #644CA8;
+$accentColorDark: #e6242b;
+$accentColorLight: #77623b;;
+
+$white:  #FAFAFA;
+$black: #111111;
+//-------------------------------COLORS---------------------------------
+
+
+//-------------------------------FONTS---------------------------------
+@font-face{
+  font-family: "Poppins";
+  font-style: normal;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+
+}
+@font-face{
+  font-family: "bold";
+  font-style: normal;
+  src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
+
+//-------------------------------FONTS---------------------------------
+
+//-------------------------------MULTI PURPOSE CSS---------------------------------
+*{
+  margin: 0;   
+  padding: 0;
+  font-family: "Poppins";
+}
+.wrapper{
+  display: flex;
+  justify-content:  center;
+}
+
+
+//-------------------------------MULTI PURPOSE CSS---------------------------------
+
+
+//-------------------------------IMPORTS---------------------------------
+@import "";
+
+
+
+//-------------------------------IMPORTS---------------------------------
