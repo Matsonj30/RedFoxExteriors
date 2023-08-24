@@ -1,5 +1,5 @@
 //-------------------------------COLORS---------------------------------
-$primaryColor: #1C2336;
+$primaryColor: #C2272D;
 $primaryDark:  #fafafa;
 $primaryLight: #FAFAFA;
 
@@ -18,15 +18,15 @@ $black: #111111;
 
 //-------------------------------FONTS---------------------------------
 @font-face{
-  font-family: "Poppins";
+  font-family: "Sahitya";
   font-style: normal;
-  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+  src: url(../fonts/Sahitya/Sahitya-Regular.ttf);
 
 }
 @font-face{
   font-family: "bold";
   font-style: normal;
-  src: url(../fonts/Poppins/Poppins-Bold.ttf);
+  src: url(../fonts/Sahitya/Sahitya-Bold.ttf);
 }
 
 //-------------------------------FONTS---------------------------------
@@ -42,12 +42,24 @@ $black: #111111;
   justify-content:  center;
 }
 
+.primaryButton{
+
+}
+.secondaryButton{
+  background-color: transparent;
+  border: 2px solid $white;
+  border-radius: 30px;
+  color: $white;
+  font-family: "bold";
+  padding: 3px 15px;
+  font-size: 20px
+}
 
 //-------------------------------MULTI PURPOSE CSS---------------------------------
 
 
 //-------------------------------IMPORTS---------------------------------
-@import "";
+@import "index/_landing.scss";
 
 
 
