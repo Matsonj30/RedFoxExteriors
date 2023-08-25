@@ -37,6 +37,9 @@ $black: #111111;
   padding: 0;
   font-family: "Poppins";
 }
+body{
+  background-color: $white;
+}
 .wrapper{
   display: flex;
   justify-content:  center;
@@ -107,7 +110,7 @@ $black: #111111;
 
 //-------------------------------IMPORTS---------------------------------
 @import "index/_landing.scss";
-@import "index/_whyRedFox.scss"
-
+@import "index/_whyRedFox.scss";
+@import "_navigation.scss"
 
 //-------------------------------IMPORTS---------------------------------
