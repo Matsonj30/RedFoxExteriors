@@ -1,0 +1,76 @@
+.whyRedFox{
+    .whyReasons{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+
+        .reason{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 30px;
+            img{
+                width: 200px;
+                height: 200px;
+          
+            }
+
+            .reasonContent{
+                h4{
+                    font-size: 25px;
+                    font-family: "bold";
+                }
+                p{
+                    max-width: 600px;
+                    color: #70838F;
+                    margin: 10px 0px;
+                    line-height: 20px;
+                    padding: 0px 5px;
+                }
+            }
+        }
+
+    }
+
+
+}
+
+@media(min-width: 1000px){
+    .whyRedFox{
+        .whyReasons{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+           
+            .reason{
+                display: flex;
+                flex-direction: unset;
+                align-items: center;
+                justify-content: center;
+                text-align: unset;
+                
+                .right{
+                    order: 1;
+                    margin-left: 65px;
+                }
+                .left{
+                    margin-right: 65px;
+                }
+                .reasonContent{
+                    p{
+                        text-align: justify;
+                        margin: unset;
+                        margin-top: 10px;
+                        margin-bottom: 15px;
+                    }
+                }
+              
+            }
+        }
+    }
+}

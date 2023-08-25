@@ -19,6 +19,21 @@
   justify-content: center;
 }
 
+.primaryButton {
+  background-color: #C2272D;
+  border: none;
+  border-radius: 30px;
+  color: #FAFAFA;
+  font-size: 18px;
+  padding: 7px 16px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.primaryButton:hover {
+  background-color: #9b1f23;
+}
+
 .secondaryButton {
   background-color: transparent;
   border: 2px solid #FAFAFA;
@@ -27,6 +42,42 @@
   font-family: "bold";
   padding: 3px 15px;
   font-size: 20px;
+  cursor: pointer;
+}
+
+.titleSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+.titleSection b {
+  color: #C2272D;
+  font-family: "bold";
+  font-size: 20px;
+  transform: translateY(5px);
+}
+.titleSection p {
+  font-size: 40px;
+}
+.titleSection .circles {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+.titleSection .circles span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0px 3px;
+  background-color: #C2272D;
+}
+.titleSection .circles .biggerCircle {
+  width: 13px;
+  height: 13px;
+  background-color: #9b1f23;
 }
 
 .landing {
@@ -74,4 +125,63 @@
 }
 .landing .textContent button {
   margin: 0px 10px;
+}
+
+.whyRedFox .whyReasons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.whyRedFox .whyReasons .reason {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+.whyRedFox .whyReasons .reason img {
+  width: 200px;
+  height: 200px;
+}
+.whyRedFox .whyReasons .reason .reasonContent h4 {
+  font-size: 25px;
+  font-family: "bold";
+}
+.whyRedFox .whyReasons .reason .reasonContent p {
+  max-width: 600px;
+  color: #70838F;
+  margin: 10px 0px;
+  line-height: 20px;
+  padding: 0px 5px;
+}
+
+@media (min-width: 1000px) {
+  .whyRedFox .whyReasons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .whyRedFox .whyReasons .reason {
+    display: flex;
+    flex-direction: unset;
+    align-items: center;
+    justify-content: center;
+    text-align: unset;
+  }
+  .whyRedFox .whyReasons .reason .right {
+    order: 1;
+    margin-left: 65px;
+  }
+  .whyRedFox .whyReasons .reason .left {
+    margin-right: 65px;
+  }
+  .whyRedFox .whyReasons .reason .reasonContent p {
+    text-align: justify;
+    margin: unset;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
 }/*# sourceMappingURL=styles.css.map */
