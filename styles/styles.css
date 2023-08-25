@@ -211,7 +211,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 .navigationBar .navSocials p {
   font-size: 20px;
@@ -220,8 +220,8 @@ body {
   font-family: "bold";
 }
 .navigationBar .navSocials .fa {
-  margin-top: 10px;
-  font-size: 25px;
+  margin-top: 15px;
+  font-size: 28px;
   color: #FAFAFA;
 }
 .navigationBar #menu {
@@ -327,6 +327,9 @@ body {
   }
   .navigationBar a button {
     display: unset;
+  }
+  .navigationBar .navSocials {
+    display: none;
   }
   .navigationBar #menu {
     background-color: #FAFAFA;
