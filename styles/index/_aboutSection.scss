@@ -1,0 +1,144 @@
+.aboutRedFox{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .aboutText{
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        text-align: center;
+        padding: 0px 5px;
+        justify-self: flex-start;
+        b{
+            font-size: 24px;
+            font-family: "bold";
+        }
+        .red{
+            font-size: 30px;
+            font-family: "bold";
+            color: $primaryColor;
+            transform: translateY(15px);
+            
+        }
+        p{
+            padding: 10px 0px;
+            padding-top: 5px;
+            line-height: 25px;
+            color: $gray;
+         
+        }
+    }
+
+    img{
+        border-radius: 10px;
+        object-fit: cover;
+        
+        width: min( 100%, 405px);
+        margin: 10px 10px;
+        height: 200px;
+    
+    }
+
+
+    form{
+        background-color: #111111;
+        color: $white;
+        max-width: 385px;
+        padding: 10px 10px;
+        border-radius: 10px;
+
+        .formTitle{
+            font-size: 30px;
+            margin-bottom: 20px;
+            b:nth-child(2){
+                color: $primaryColor;
+            }
+        }
+        p{
+            font-family: "bold";
+            font-size: 20px;
+            margin: 5px 0px;
+            max-width: 405px;
+        }
+
+        input:focus{
+            outline: none !important;
+            background-color: rgb(253, 218, 218);
+          
+        }
+      
+     
+        .details{
+            width: 160px;
+            height: 26px;
+            color: $gray;
+            border-radius: 5px;
+            border: none;
+            font-size: 14px;
+            margin: 5px 2px;
+            background-color: #fafafa;
+            padding: 2px 2px;
+        }
+        .checkboxes{
+            margin: 8px 0px;
+            .box{
+                margin: 0px 2px;
+            }
+        }
+     
+        .referral{
+            border-radius: 5px;
+            width: 98%;
+            border: none;
+            margin-bottom: 10px;
+            padding: 2px 2px;
+            font-size: 14px;
+        }
+        textarea{
+            resize: none;
+            width: 98%;
+            border: none;
+            height: 150px;
+            border-radius: 5px;
+            padding: 2px 2px;
+            font-size: 14px;
+        }
+        textarea:focus{
+            outline: none !important;
+            background-color: rgb(253, 218, 218);
+
+            border: none;
+        }
+        button{
+          margin-top: 10px;
+          width: 150px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: "bold";
+        }
+    }
+}
+
+@media(min-width:1260px){
+    
+    .aboutRedFox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: unset;
+        align-items: unset;
+
+
+        img{
+            margin: unset;
+            height: auto;
+        }
+        form{
+            margin-left: 10px;
+        }
+    }
+}

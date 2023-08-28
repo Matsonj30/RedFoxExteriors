@@ -32,6 +32,7 @@ body {
   padding: 7px 16px;
   cursor: pointer;
   transition: 0.5s;
+  font-family: "bold";
 }
 
 .primaryButton:hover {
@@ -55,6 +56,8 @@ body {
   align-items: center;
   width: 100%;
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 .titleSection b {
   color: #C2272D;
@@ -101,13 +104,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 420px;
-  width: 685px;
+  margin: 0px 20px;
+  min-height: 420px;
+  max-width: 685px;
   color: #FAFAFA;
 }
 .landing .textContent .title {
   font-size: 28px;
   padding: 10px 0px;
+  text-align: center;
 }
 .landing .textContent b {
   font-size: 50px;
@@ -117,18 +122,24 @@ body {
 }
 .landing .textContent .line {
   display: inline-block;
-  width: 610px;
+  width: 90%;
   height: 2px;
   background-color: #FAFAFA;
 }
 .landing .textContent .supportingDetails {
   font-size: 20px;
   text-align: center;
-  padding: 30px 0px;
+  padding: 30px 5px;
   max-width: 600px;
 }
-.landing .textContent button {
-  margin: 0px 10px;
+.landing .textContent .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.landing .textContent .buttons button {
+  margin: 5px 10px;
 }
 
 .whyRedFox .whyReasons {
@@ -189,6 +200,336 @@ body {
     margin-bottom: 15px;
   }
 }
+.aboutRedFox {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutRedFox .aboutText {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  text-align: center;
+  padding: 0px 5px;
+  justify-self: flex-start;
+}
+.aboutRedFox .aboutText b {
+  font-size: 24px;
+  font-family: "bold";
+}
+.aboutRedFox .aboutText .red {
+  font-size: 30px;
+  font-family: "bold";
+  color: #C2272D;
+  transform: translateY(15px);
+}
+.aboutRedFox .aboutText p {
+  padding: 10px 0px;
+  padding-top: 5px;
+  line-height: 25px;
+  color: #70838F;
+}
+.aboutRedFox img {
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: min(100%, 405px);
+  margin: 10px 10px;
+  height: 200px;
+}
+.aboutRedFox form {
+  background-color: #111111;
+  color: #FAFAFA;
+  max-width: 385px;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+.aboutRedFox form .formTitle {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.aboutRedFox form .formTitle b:nth-child(2) {
+  color: #C2272D;
+}
+.aboutRedFox form p {
+  font-family: "bold";
+  font-size: 20px;
+  margin: 5px 0px;
+  max-width: 405px;
+}
+.aboutRedFox form input:focus {
+  outline: none !important;
+  background-color: rgb(253, 218, 218);
+}
+.aboutRedFox form .details {
+  width: 160px;
+  height: 26px;
+  color: #70838F;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  margin: 5px 2px;
+  background-color: #fafafa;
+  padding: 2px 2px;
+}
+.aboutRedFox form .checkboxes {
+  margin: 8px 0px;
+}
+.aboutRedFox form .checkboxes .box {
+  margin: 0px 2px;
+}
+.aboutRedFox form .referral {
+  border-radius: 5px;
+  width: 98%;
+  border: none;
+  margin-bottom: 10px;
+  padding: 2px 2px;
+  font-size: 14px;
+}
+.aboutRedFox form textarea {
+  resize: none;
+  width: 98%;
+  border: none;
+  height: 150px;
+  border-radius: 5px;
+  padding: 2px 2px;
+  font-size: 14px;
+}
+.aboutRedFox form textarea:focus {
+  outline: none !important;
+  background-color: rgb(253, 218, 218);
+  border: none;
+}
+.aboutRedFox form button {
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "bold";
+}
+
+@media (min-width: 1260px) {
+  .aboutRedFox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: unset;
+    align-items: unset;
+  }
+  .aboutRedFox img {
+    margin: unset;
+    height: auto;
+  }
+  .aboutRedFox form {
+    margin-left: 10px;
+  }
+}
+.paginator {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #111111;
+}
+.paginator .fa-quote-left {
+  color: #FAFAFA;
+  font-size: 40px;
+  padding: 20px;
+}
+.paginator .scrollContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.paginator .scrollContainer .arrow {
+  cursor: pointer;
+  display: none !important;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  transform: translateY(-25px);
+  display: flex;
+}
+.paginator .scrollContainer .arrow p {
+  line-height: 50px;
+  font-size: 100px;
+  color: #FAFAFA;
+}
+.paginator .scrollContainer #imageContainer {
+  width: 100%;
+  overflow-x: scroll;
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border-radius: 20px;
+}
+.paginator .scrollContainer #imageContainer .testimonial {
+  width: calc(100% - 20px);
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  text-align: center;
+  padding: 0px 10px;
+}
+.paginator .scrollContainer #imageContainer .testimonial p {
+  color: #FAFAFA;
+  font-size: 16px;
+  line-height: 30px;
+}
+.paginator .scrollContainer #imageContainer .testimonial .bold {
+  font-size: 25px;
+  color: #FAFAFA;
+  letter-spacing: 1px;
+  font-family: "bold";
+  margin-top: 15px;
+}
+.paginator .scrollContainer #imageContainer .testimonial .pad {
+  margin-bottom: 5px;
+}
+.paginator .scrollContainer #imageContainer::-webkit-scrollbar {
+  height: 15px;
+}
+.paginator .scrollContainer #imageContainer::-webkit-scrollbar-track {
+  background-color: #1e86b3;
+}
+.paginator .scrollContainer #imageContainer::-webkit-scrollbar-thumb {
+  background-color: #FAFAFA;
+  border-radius: 30px;
+}
+.paginator .circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.paginator .circles span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0px 2px;
+  background-color: #70838F;
+}
+.paginator .circles #circle0 {
+  background-color: #FAFAFA;
+}
+
+@media (min-width: 600px) {
+  .paginator .scrollContainer #imageContainer .testimonial p {
+    font-size: 18px;
+  }
+  .paginator .scrollContainer #imageContainer img {
+    height: auto;
+    -o-object-fit: unset;
+       object-fit: unset;
+  }
+}
+@media (min-width: 1200px) {
+  .paginator .scrollContainer {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .paginator .scrollContainer .arrow {
+    display: block !important;
+  }
+  .paginator .scrollContainer #imageContainer {
+    width: 1000px;
+    margin: 0px 30px;
+  }
+  .paginator .scrollContainer #imageContainer .testiomial {
+    width: 1000px;
+    -o-object-fit: unset;
+       object-fit: unset;
+    margin: 0px 100px;
+  }
+  .paginator .scrollContainer #imageContainer::-webkit-scrollbar {
+    display: none;
+  }
+  .paginator .circles {
+    margin-top: 0px;
+  }
+}
+@media (min-width: 1400px) {
+  .paginator .scrollContainer #imageContainer {
+    width: 1200px;
+  }
+  .paginator .scrollContainer #imageContainer img {
+    height: auto;
+    width: 1200px;
+  }
+}
+.redFoxServices .servicesContainer .arrow {
+  font-size: 80px;
+}
+.redFoxServices .servicesContainer .cardContainer .card {
+  position: relative;
+  background-color: rgb(194, 186, 186);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 450px;
+  min-height: 550px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.3137254902);
+}
+.redFoxServices .servicesContainer .cardContainer .card img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.redFoxServices .servicesContainer .cardContainer .card .cardSymbol {
+  width: 80px;
+  height: 80px;
+  background-color: #FAFAFA;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 160px;
+  box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.3137254902);
+}
+.redFoxServices .servicesContainer .cardContainer .card .cardSymbol img {
+  width: 50px;
+  height: 50px;
+}
+.redFoxServices .servicesContainer .cardContainer .card .cardTitle {
+  margin-top: 60px;
+  text-align: center;
+  line-height: 22px;
+}
+.redFoxServices .servicesContainer .cardContainer .card .cardTitle p {
+  color: #C2272D;
+}
+.redFoxServices .servicesContainer .cardContainer .card .cardTitle b {
+  font-family: "bold";
+  font-size: 28px;
+}
+.redFoxServices .servicesContainer .cardContainer .card .serviceDescription {
+  margin: 20px 0px;
+  text-align: center;
+  padding: 0px 5px;
+  font-size: 18px;
+  line-height: 30px;
+}
+.redFoxServices .servicesContainer .cardContainer .card button {
+  padding: 10px 30px;
+  font-size: 20px;
+}
+
 .navigationBar {
   height: 100px;
   width: 100%;
@@ -386,4 +727,159 @@ body {
   .hamburgerMenu {
     display: none;
   }
+}
+footer {
+  margin-top: 100px;
+  color: #FAFAFA !important;
+  background-color: #111111;
+  display: flex;
+  background-image: url("../images/footerImage.png");
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background-size: cover;
+}
+footer .section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .section b {
+  letter-spacing: 1px;
+  font-size: 18px;
+  margin-right: 5px;
+}
+footer .section ul {
+  padding-bottom: 35px;
+  list-style: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 166px;
+}
+footer .section ul li {
+  padding: 5px 0px;
+  transition: 0.5s ease-in-out;
+}
+footer .section ul li a {
+  text-decoration: none;
+  color: #FAFAFA;
+  font-size: 18px;
+}
+footer .section ul li .fa {
+  color: #FAFAFA;
+}
+footer .section ul li:hover {
+  opacity: 0.4;
+  cursor: pointer;
+}
+footer .section ul li:first-child:hover {
+  opacity: 1;
+  cursor: auto;
+}
+footer .section ul li:first-child {
+  color: #644CA8;
+}
+footer .section ul li:first-child b {
+  color: #644CA8;
+  font-family: "bold";
+  color: #FAFAFA;
+}
+footer .logoAndDescription {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .logoAndDescription p {
+  max-width: 320px;
+  text-align: center;
+  font-size: 18px;
+}
+footer .hours .fa {
+  padding-right: 5px;
+  font-size: 18px;
+}
+footer .hours ul li {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer .hours ul li b {
+  display: inline-block;
+  width: 50px;
+}
+footer .contact .fa {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+footer .contact .fa-instagram {
+  padding-top: 3px;
+  padding-right: 2px;
+}
+
+@media (min-width: 1100px) {
+  footer .section ul {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: 30px;
+  }
+  .copyright p {
+    font-size: 16px;
+  }
+  .hours ul {
+    margin-left: 0px !important;
+  }
+}
+@media (min-width: 800px) {
+  footer {
+    flex-direction: row;
+    justify-content: center;
+  }
+  footer .section {
+    width: 200px;
+    height: 350px;
+  }
+  footer .logoAndDescription {
+    flex-basis: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+@media (min-width: 1300px) {
+  footer {
+    justify-content: center;
+  }
+  footer .section {
+    padding-top: 49px;
+    margin: 0px 25px;
+  }
+  footer .logoAndDescription {
+    transform: translateY(-55px);
+    padding-top: 0px;
+    flex-basis: auto;
+    width: 250px !important;
+  }
+}
+.copyright {
+  background-color: rgba(17, 17, 17, 0.7960784314);
+  width: 100%;
+  color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.copyright .developer {
+  display: flex;
+}
+.copyright .developer p {
+  font-size: 15px;
+  margin: auto;
+}
+.copyright .developer a {
+  text-decoration: none;
+  font-family: "bold";
+  color: #C2272D;
+}
+.copyright .developer a:hover {
+  opacity: 0.5;
 }/*# sourceMappingURL=styles.css.map */

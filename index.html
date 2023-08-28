@@ -58,7 +58,7 @@
 <div class="landing">
 
 
-    <!-- <div class="textContent">
+    <div class="textContent">
         <p class="title">Welcome to Red Fox Exteriors</h2></p>
         <b>Where Quality Meets Craftsmanship</b>
         <span class="line"></span>
@@ -68,7 +68,7 @@
             <button class="secondaryButton">View Our Facebook</button>
         </div>
       
-    </div> -->
+    </div>
 
 
 </div>
@@ -80,7 +80,51 @@
 <!-------------------------------------------------------------------------------------->
 <!-----------------------------------SERVICES------------------------------------------->
 <!-------------------------------------------------------------------------------------->
+<div class="redFoxServices">
+    <div class="titleSection">
+        <b>Our Services</b>
+        <p>How Can We Help You Today?</p>
+        <div class="circles">
+            <span></span>
+            <span class="biggerCircle"></span>
+            <span></span>
+        </div>
+  
+    </div>
 
+    <div class="servicesContainer">
+        <div class="arrow" onclick="changeIndex(-1)" ><p>&#8249;</p></div>
+      
+
+        <div class="cardContainer">
+
+            <div class="card">
+                <img src="images/shinglesImage.jpg" alt="shingles">
+                <div class="cardSymbol">
+                    <img src="" alt="">
+                </div>
+                <div class="cardTitle">
+                    <p>Great Value</p>
+                    <b>Roofing</b>
+                </div>
+                <p class="serviceDescription">(This is random text please ignore content) We offer a wide range of roofing services, including asphalt, metal, rubber, and low slope roofs. Our experienced team of professionals can help you find the right solution for your roofing needs. 
+                </p>
+                <button class="primaryButton">Free Estimate</button>
+            </div>
+
+          
+
+
+
+
+
+
+        </div>
+
+        <div class="arrow" onclick="changeIndex(1)" ><p>&#8250;</p></div>
+    </div>
+
+</div>
 
 <!-------------------------------------------------------------------------------------->
 <!-----------------------------------SERVICES------------------------------------------->
@@ -150,21 +194,198 @@
 <!-------------------------------------------------------------------------------------->
 
 <!-------------------------------------------------------------------------------------->
-<!-----------------------------------PORTFOLIO------------------------------------------->
+<!-----------------------------------ABOUT SECTION-------------------------------------->
+<!-------------------------------------------------------------------------------------->
+
+<div class="aboutRedFox">
+    <div class="titleSection">
+        <b>Additional Information</b>
+        <p>About Red Fox Exteriors</p>
+        <div class="circles">
+            <span></span>
+            <span class="biggerCircle"></span>
+            <span></span>
+        </div>
+  
+    </div>
+
+    <div class="aboutText">
+        <b class="red">RED FOX EXTERIORS</b>
+        <b>Alberta Contractors</b>
+        <p>At Red Fox Exteriors, we pride ourselves on being Alberta's premier contracting solution. With a legacy rooted deep in the heart of Alberta, we specialize in delivering top-tier roofing, siding, concrete work, and a vast array of other exterior services. Our commitment is to excellence in every project, big or small. Leveraging years of expertise and a passion for craftsmanship, we strive to transform homes and businesses across Alberta. Trust in Red Fox Exteriors to bring quality, durability, and beauty to every structure we touch.</p>
+    </div>
+    <img src="images/shingles.png" alt="shingles">
+    <form name="contact" method="post" data-netlify="true" onSubmit="submit">
+
+        <div class="formTitle"><b>Request a </b><b>Quote</b></div>
+
+
+        <p>Information</p>
+
+        <input class=details placeholder="Full Name" type="text" name="name" />
+        <input class=details placeholder="E-mail" type="email" name="email" />
+        <input class=details placeholder="Phone #" type="tel" name="phone" />
+        
+
+        <p>House Address</p>
+
+        <input class=details placeholder="Street" type="text" name="street" />
+        <input class=details placeholder="City" type="text" name="city" />
+        <input class=details placeholder="Postal Code" type="text" name="postalCode" />
+
+
+        <p>Services Required</p>
+
+        <div class="checkBox">
+            
+        </div>
+
+        <div class="checkboxes">
+            <input class="box" type="checkbox" id="scales" name="sheeting"/>
+            <label for="sheeting">Sheeting</label>
+    
+            <input class="box" type="checkbox" id="siding" name="siding"/>
+            <label for="siding">Siding</label>
+            
+            <input class="box" type="checkbox" id="cleanup" name="cleanup"/>
+            <label for="cleanup">Cleanup</label>
+            
+            <input class="box" type="checkbox" id="demolition" name="demolition"/>
+            <label for="demolition">Demolition</label>
+            
+            <input class="box" type="checkbox" id="shingles" name="shingles"/>
+            <label for="shingles">Shingles</label>
+            
+            <input class="box" type="checkbox" id="fencing" name="fencing"/>
+            <label for="fencing">Fencing</label>
+            
+            <input class="box" type="checkbox" id="decks" name="decks"/>
+            <label for="decks">Decks</label>
+            
+            <input class="box" type="checkbox" id="snowRemoval" name="snowRemoval"/>
+            <label for="snowRemoval">Snow Removal</label>
+            
+        </div>
+       
+  
+        <p>Additional Information</p>
+        <input class=referral placeholder="How Did You Hear About Us?" type="text" name="HowTheyHeardAboutYou" />
+        <textarea id="additionalInfo" placeholder="Additional details or a summary of the job you are looking for specifically..."></textarea>
+        <div class="wrapper">
+            <button class="primaryButton" type="submit">Submit</button>
+        </div>
+    
+    </form>
+
+
+
+
+</div>
+
+<!-------------------------------------------------------------------------------------->
+<!-----------------------------------ABOUT SECTION-------------------------------------->
 <!-------------------------------------------------------------------------------------->
 
 
 
 <!-------------------------------------------------------------------------------------->
-<!-----------------------------------PORTFOLIO------------------------------------------>
+<!-----------------------------------TESTIMONIAL---------------------------------------->
 <!-------------------------------------------------------------------------------------->
+<div class="paginator">
+    <div class="fa fa-quote-left"></div>
+    <div class="scrollContainer">
+        
+        <div class="arrow" onclick="changeIndex(-1)" ><p>&#8249;</p></div>
+        
+        <div id="imageContainer">
+        
+            <div class="testimonial" id="test0">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum placeat vel et quod ducimus odit sunt ipsam, tempore quisquam perspiciatis id ea nihil labore saepe autem? Cupiditate, maiores fuga? Provident, animi. Cupiditate accusantium natus perspiciatis exercitationem debitis numquam ut. Deleniti et debitis asperiores labore necessitatibus odio veniam doloribus libero sequi!</p>
+                <p class="bold">First Last</p>
+                <p class="pad">Facebook Post</p>
+            </div>
+            <div class="testimonial"  id="test1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum placeat vel et quod ducimus odit sunt ipsam, tempore quisquam perspiciatis id ea nihil labore saepe autem? Cupiditate, maiores fuga? Provident, animi. Cupiditate accusantium natus perspiciatis exercitationem debitis numquam ut. Deleniti et debitis asperiores labore necessitatibus odio veniam doloribus libero sequi!</p>
+                <p class="bold">First Last</p>
+                <p class="pad">Facebook Post</p>
+            </div>
+            <div class="testimonial"  id="test2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum placeat vel et quod ducimus odit sunt ipsam, tempore quisquam perspiciatis id ea nihil labore saepe autem? Cupiditate, maiores fuga? Provident, animi. Cupiditate accusantium natus perspiciatis exercitationem debitis numquam ut. Deleniti et debitis asperiores labore necessitatibus odio veniam doloribus libero sequi!</p>
+                <p class="bold">First Last</p>
+                <p class="pad">Facebook Post</p>
+            </div>
+        </div>
+
+        <div class="arrow" onclick="changeIndex(1)" ><p>&#8250;</p></div>
+    </div>
+
+    <div class="circles">
+        <span id="circle0"></span>
+        <span id="circle1"></span>
+        <span id="circle2"></span>
+    </div>
+ 
+
+</div>
+
+
+
+<!-------------------------------------------------------------------------------------->
+<!-----------------------------------TESTIMONIAL----------------------------------------->
+<!-------------------------------------------------------------------------------------->
+
+
 
 <!-------------------------------------------------------------------------------------->
 <!-----------------------------------FOOTER--------------------------------------------->
 <!-------------------------------------------------------------------------------------->
-<footer id="footer">
+<footer>
 
+    <div class="logoAndDescription section">
+        <div class=footerLogo><img src="images/logo.png" alt="companyLogo"></div>
+        <p>Hinton Functional Fitness is a freindly & positive fitness facility that offers a wide range of services and excursions to help you reach any fitness goal!</p>
+    </div>
+
+    <div class="navigation section">
+       <ul>
+        <li><b>Navigation</b></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ourTeam.html">Our Team</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+       </ul>
+    </div>
+
+    <div class="hours section">
+        <ul>
+            <li><b>Hours</b></li>
+            <li><b>MON:</b>6 AM - 8:15 PM</li>
+            <li><b>TUE:</b>6 AM - 8:15 PM</li>
+            <li><b>WED:</b>6 AM - 8:15 PM</li>
+            <li><b>THU:</b>6 AM - 8:15 PM</li>
+            <li><b>FRI:</b>6 AM - 8:15 PM</li>
+            <li><b>SAT:</b>9 AM - 12:15 PM</li>
+            <li><b>SUN:</b>CLOSED</li>
+        </ul>
+    </div>
+    <div class="contact section">
+        <ul>
+            <li><b>Contact Us</b></li>
+            <li><a href= "tel:780-977-7372"><div class="fa fa-phone"></div>(780) 977-7372</a></li>
+            <li><a href="https://www.facebook.com/redfoxexteriors.strathmore.1"><div class="fa fa-facebook"></div>Facebook</a></li>
+        </ul>
+    </div>
+
+    <div class="copyright">
+        <div class=developer> 
+            <p>Developed by&nbsp;</p><a href="https://kansasridgewebdesign.ca/">Kansas Ridge Web Design</a>
+        </div>
+        <p>© 2023 Red Fox Exteriors</p>
+    </div>
+    
+    
 </footer>
+
 <!-------------------------------------------------------------------------------------->
 <!-----------------------------------FOOTER--------------------------------------------->
 <!-------------------------------------------------------------------------------------->

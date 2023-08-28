@@ -11,6 +11,7 @@ $accentColor: #644CA8;
 $accentColorDark: #e6242b;
 $accentColorLight: #77623b;;
 
+$gray: #70838F;
 $white:  #FAFAFA;
 $black: #111111;
 //-------------------------------COLORS---------------------------------
@@ -54,6 +55,7 @@ body{
   padding: 7px 16px;
   cursor: pointer;
   transition: 0.5s;
+  font-family: "bold";
 }
 .primaryButton:hover{
   background-color: $primaryDark;
@@ -75,6 +77,8 @@ body{
   align-items: center;
   width: 100%;
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
 
     b{
       color: $primaryColor;
@@ -110,7 +114,11 @@ body{
 
 //-------------------------------IMPORTS---------------------------------
 @import "index/_landing.scss";
-@import "index/_whyRedFox.scss";
-@import "_navigation.scss"
+@import "index/_whySection.scss";
+@import "index/_aboutSection.scss";
+@import "index/_testimonial.scss";
+@import "index/_servicesSection.scss";
+@import "_navigation.scss";
+@import "_footer.scss";
 
 //-------------------------------IMPORTS---------------------------------
