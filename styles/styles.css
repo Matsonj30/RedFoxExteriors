@@ -469,28 +469,50 @@ body {
     width: 1200px;
   }
 }
-.redFoxServices .servicesContainer .arrow {
-  font-size: 80px;
-}
-.redFoxServices .servicesContainer .cardContainer .card {
+.redFoxServices {
+  width: 100%;
   position: relative;
-  background-color: rgb(194, 186, 186);
+}
+.redFoxServices .scrollContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.redFoxServices .scrollContainer .arrow {
+  font-size: 100px;
+}
+.redFoxServices .scrollContainer #cardContainer {
+  width: 100%;
+  overflow-x: scroll;
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  background-color: rgb(216, 154, 154);
+  border-radius: 20px;
+}
+.redFoxServices .scrollContainer #cardContainer .card {
+  position: relative;
+  background-color: #FAFAFA;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 450px;
-  min-height: 550px;
+  width: 100%;
   border-radius: 10px;
   box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.3137254902);
+  margin-right: 100px;
+  flex: 0 0 100%;
+  scroll-snap-align: start;
 }
-.redFoxServices .servicesContainer .cardContainer .card img {
+.redFoxServices .scrollContainer #cardContainer .card img {
   width: 100%;
   border-radius: 10px 10px 0px 0px;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.redFoxServices .servicesContainer .cardContainer .card .cardSymbol {
+.redFoxServices .scrollContainer #cardContainer .card .cardSymbol {
   width: 80px;
   height: 80px;
   background-color: #FAFAFA;
@@ -502,32 +524,44 @@ body {
   top: 160px;
   box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.3137254902);
 }
-.redFoxServices .servicesContainer .cardContainer .card .cardSymbol img {
+.redFoxServices .scrollContainer #cardContainer .card .cardSymbol img {
   width: 50px;
   height: 50px;
 }
-.redFoxServices .servicesContainer .cardContainer .card .cardTitle {
+.redFoxServices .scrollContainer #cardContainer .card .cardTitle {
   margin-top: 60px;
   text-align: center;
   line-height: 22px;
 }
-.redFoxServices .servicesContainer .cardContainer .card .cardTitle p {
+.redFoxServices .scrollContainer #cardContainer .card .cardTitle p {
   color: #C2272D;
 }
-.redFoxServices .servicesContainer .cardContainer .card .cardTitle b {
+.redFoxServices .scrollContainer #cardContainer .card .cardTitle b {
   font-family: "bold";
   font-size: 28px;
 }
-.redFoxServices .servicesContainer .cardContainer .card .serviceDescription {
+.redFoxServices .scrollContainer #cardContainer .card .serviceDescription {
   margin: 20px 0px;
   text-align: center;
-  padding: 0px 5px;
+  padding: 0px 15px;
   font-size: 18px;
   line-height: 30px;
 }
-.redFoxServices .servicesContainer .cardContainer .card button {
+.redFoxServices .scrollContainer #cardContainer .card button {
   padding: 10px 30px;
   font-size: 20px;
+  margin-bottom: 10px;
+}
+.redFoxServices .scrollContainer #cardContainer::-webkit-scrollbar {
+  background-color: #FAFAFA;
+  height: 15px;
+}
+.redFoxServices .scrollContainer #cardContainer::-webkit-scrollbar-track {
+  background-color: rgb(216, 154, 154);
+}
+.redFoxServices .scrollContainer #cardContainer::-webkit-scrollbar-thumb {
+  background-color: #C2272D;
+  border-radius: 10px;
 }
 
 .navigationBar {
