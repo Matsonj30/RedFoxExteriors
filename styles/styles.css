@@ -484,6 +484,7 @@ body {
   font-size: 100px;
   display: none;
   cursor: pointer;
+  color: #C2272D;
 }
 .redFoxServices .scrollContainer #cardContainer {
   width: 100%;
@@ -567,15 +568,15 @@ body {
 }
 
 @media (min-width: 450px) {
-  .redFoxServices .scrollContainer .arrow {
-    display: block;
-    margin: 50px 50px;
-  }
   .redFoxServices .scrollContainer #cardContainer .card {
     flex: 0 0 450px;
   }
 }
 @media (min-width: 1550px) {
+  .redFoxServices .scrollContainer .arrow {
+    display: block;
+    margin: 50px 50px;
+  }
   .redFoxServices .scrollContainer #cardContainer {
     width: 1550px;
     border-radius: 20px;
@@ -636,7 +637,7 @@ body {
   padding-left: 0px;
 }
 .navigationBar #menu ul {
-  padding-top: 200px;
+  padding-top: 50px;
   list-style: none;
   text-align: center;
   width: 100%;
@@ -648,7 +649,7 @@ body {
   padding: 20px 0px;
   text-align: center;
   width: 90%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
   margin-right: unset;
 }
 .navigationBar #menu ul li .fa {

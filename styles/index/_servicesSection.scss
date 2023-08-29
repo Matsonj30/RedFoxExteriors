@@ -12,7 +12,9 @@
             font-size: 100px;
             display: none;
             cursor: pointer;
+            color: $primaryColor;
         }
+      
         #cardContainer{
             width: 100%;
             overflow-x: scroll;
@@ -22,7 +24,7 @@
             scroll-behavior: smooth;
         
            // box-shadow: 100px 0 200px $primaryColor, -100px 0 200px #191b35 ;
-   
+            
             .card{
                 position: relative;
                 background-color: $white;
@@ -85,6 +87,7 @@
                 }
             }
         }
+
         #cardContainer::-webkit-scrollbar {
             background-color: $primaryLight;
             height: 10px;
@@ -110,10 +113,7 @@
 
         .scrollContainer{
      
-            .arrow{
-                display: block;
-                margin: 50px 50px;
-            }
+           
             #cardContainer{
 
                 .card{
@@ -133,7 +133,10 @@
 
 
         .scrollContainer{
-
+            .arrow{
+                display: block;
+                margin: 50px 50px;
+            }
             #cardContainer{
                 width: 1550px;
                 border-radius: 20px;

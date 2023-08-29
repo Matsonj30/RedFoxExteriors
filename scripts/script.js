@@ -19,22 +19,70 @@ function scrollToDiv(location){
 }
 
 
-document.getElementById("testimonialContainer").addEventListener("scroll", scrollEvent);
-console.log(document.getElementById("imageContainer"))
 
 function changeServiceIndex(direction){
     var currentIndex = getCurrentIndex("services")
+    console.log(currentIndex)
+  //  console.log(currentIndex)
     nextIndex = currentIndex + direction
     if(nextIndex == -1){
-        nextIndex = 6;
+        nextIndex = 5;
     }
-    else if(nextIndex == 7){
+    if(nextIndex == 4){
+        nextIndex = 5;
+    }
+
+    else if(nextIndex == 6){
+  
         nextIndex = 0;
     }
+   
     var nextDestination = document.getElementById("card"+ (nextIndex)); 
     nextDestination.scrollIntoView({behavior: "smooth", block: "nearest", inline: "start"});
 }
 
+function autoScroll(){
+    cardContainer = document.getElementById("cardContainer")
+    container.scrollR
+
+
+}
+
+
+//MULTIUSE JS
+
+function getCurrentIndex(div){
+
+    if(div == "testimonials"){
+        scrollContainer = document.getElementById("testimonialContainer");
+        var indicies = scrollContainer.getElementsByClassName("testimonial");
+    }
+    else{
+        scrollContainer = document.getElementById("cardContainer");
+        var indicies = scrollContainer.getElementsByClassName("card");
+    }
+
+
+
+
+
+
+
+    var positionInContainer = scrollContainer.scrollLeft;
+    var widthOfTestimonial = indicies[0].offsetWidth; //all same width
+
+    var currentIndex = Math.floor(positionInContainer / widthOfTestimonial);
+    //If you add too much padding, it may get the wrong index if you add a lot of elements
+
+    return currentIndex;
+}
+
+
+
+//TESTIMONIAL JS
+
+document.getElementById("testimonialContainer").addEventListener("scroll", scrollEvent);
+console.log(document.getElementById("imageContainer"))
 
 function changeTestIndex(direction){
 
@@ -51,25 +99,6 @@ function changeTestIndex(direction){
     var nextDestination = document.getElementById("test"+ (nextIndex)); 
     nextDestination.scrollIntoView({behavior: "smooth", block: "nearest", inline: "start"});
 
-}
-function getCurrentIndex(div){
-
-    if(div == "testimonials"){
-        scrollContainer = document.getElementById("testimonialContainer");
-        var indicies = scrollContainer.getElementsByClassName("testimonial");
-    }
-    else{
-        scrollContainer = document.getElementById("cardContainer");
-        var indicies = scrollContainer.getElementsByClassName("card");
-    }
-
-
-    var positionInContainer = scrollContainer.scrollLeft;
-    var widthOfTestimonial = indicies[0].offsetWidth; //all same width
-    var currentIndex = Math.floor(positionInContainer / widthOfTestimonial);
-    //If you add too much padding, it may get the wrong index if you add a lot of elements
-
-    return currentIndex;
 }
 
 //cant put this in the scroll event listener for some reason
