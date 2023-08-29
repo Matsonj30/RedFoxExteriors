@@ -19,12 +19,26 @@ function scrollToDiv(location){
 }
 
 
-document.getElementById("imageContainer").addEventListener("scroll", scrollEvent);
+document.getElementById("testimonialContainer").addEventListener("scroll", scrollEvent);
 console.log(document.getElementById("imageContainer"))
 
-function changeIndex(direction){
+function changeServiceIndex(direction){
+    var currentIndex = getCurrentIndex("services")
+    nextIndex = currentIndex + direction
+    if(nextIndex == -1){
+        nextIndex = 6;
+    }
+    else if(nextIndex == 7){
+        nextIndex = 0;
+    }
+    var nextDestination = document.getElementById("card"+ (nextIndex)); 
+    nextDestination.scrollIntoView({behavior: "smooth", block: "nearest", inline: "start"});
+}
 
-    var currentIndex = getCurrentIndex()
+
+function changeTestIndex(direction){
+
+    var currentIndex = getCurrentIndex("testimonials")
     //current spot +- 1 depending on button clicked
     nextIndex = currentIndex + direction;
     if(nextIndex == -1){
@@ -38,9 +52,17 @@ function changeIndex(direction){
     nextDestination.scrollIntoView({behavior: "smooth", block: "nearest", inline: "start"});
 
 }
-function getCurrentIndex(){
-    scrollContainer = document.getElementById("imageContainer");
-    var indicies = scrollContainer.getElementsByClassName("testimonial");
+function getCurrentIndex(div){
+
+    if(div == "testimonials"){
+        scrollContainer = document.getElementById("testimonialContainer");
+        var indicies = scrollContainer.getElementsByClassName("testimonial");
+    }
+    else{
+        scrollContainer = document.getElementById("cardContainer");
+        var indicies = scrollContainer.getElementsByClassName("card");
+    }
+
 
     var positionInContainer = scrollContainer.scrollLeft;
     var widthOfTestimonial = indicies[0].offsetWidth; //all same width
@@ -53,7 +75,7 @@ function getCurrentIndex(){
 //cant put this in the scroll event listener for some reason
 function scrollEvent(){
 
-    changeCircleColor(getCurrentIndex())
+    changeCircleColor(getCurrentIndex("testimonials"))
 }
 function changeCircleColor(currentIndex){
   

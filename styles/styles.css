@@ -338,7 +338,8 @@ body {
   position: relative;
   -o-object-fit: cover;
      object-fit: cover;
-  background-color: #111111;
+  background: rgb(194, 39, 45);
+  background: linear-gradient(222deg, rgb(194, 39, 45) 0%, rgb(210, 87, 49) 100%);
 }
 .paginator .fa-quote-left {
   color: #FAFAFA;
@@ -364,7 +365,7 @@ body {
   font-size: 100px;
   color: #FAFAFA;
 }
-.paginator .scrollContainer #imageContainer {
+.paginator .scrollContainer #testimonialContainer {
   width: 100%;
   overflow-x: scroll;
   display: flex;
@@ -374,35 +375,35 @@ body {
   scroll-behavior: smooth;
   border-radius: 20px;
 }
-.paginator .scrollContainer #imageContainer .testimonial {
+.paginator .scrollContainer #testimonialContainer .testimonial {
   width: calc(100% - 20px);
   flex-shrink: 0;
   scroll-snap-align: start;
   text-align: center;
   padding: 0px 10px;
 }
-.paginator .scrollContainer #imageContainer .testimonial p {
+.paginator .scrollContainer #testimonialContainer .testimonial p {
   color: #FAFAFA;
   font-size: 16px;
   line-height: 30px;
 }
-.paginator .scrollContainer #imageContainer .testimonial .bold {
+.paginator .scrollContainer #testimonialContainer .testimonial .bold {
   font-size: 25px;
   color: #FAFAFA;
   letter-spacing: 1px;
   font-family: "bold";
   margin-top: 15px;
 }
-.paginator .scrollContainer #imageContainer .testimonial .pad {
+.paginator .scrollContainer #testimonialContainer .testimonial .pad {
   margin-bottom: 5px;
 }
-.paginator .scrollContainer #imageContainer::-webkit-scrollbar {
+.paginator .scrollContainer #testimonialContainer::-webkit-scrollbar {
   height: 15px;
 }
-.paginator .scrollContainer #imageContainer::-webkit-scrollbar-track {
+.paginator .scrollContainer #testimonialContainer::-webkit-scrollbar-track {
   background-color: #1e86b3;
 }
-.paginator .scrollContainer #imageContainer::-webkit-scrollbar-thumb {
+.paginator .scrollContainer #testimonialContainer::-webkit-scrollbar-thumb {
   background-color: #FAFAFA;
   border-radius: 30px;
 }
@@ -419,17 +420,17 @@ body {
   height: 12px;
   border-radius: 50%;
   margin: 0px 2px;
-  background-color: #70838F;
+  background-color: #A8A8A8;
 }
 .paginator .circles #circle0 {
   background-color: #FAFAFA;
 }
 
 @media (min-width: 600px) {
-  .paginator .scrollContainer #imageContainer .testimonial p {
+  .paginator .scrollContainer #testimonialContainer .testimonial p {
     font-size: 18px;
   }
-  .paginator .scrollContainer #imageContainer img {
+  .paginator .scrollContainer #testimonialContainer img {
     height: auto;
     -o-object-fit: unset;
        object-fit: unset;
@@ -443,17 +444,17 @@ body {
   .paginator .scrollContainer .arrow {
     display: block !important;
   }
-  .paginator .scrollContainer #imageContainer {
+  .paginator .scrollContainer #testimonialContainer {
     width: 1000px;
     margin: 0px 30px;
   }
-  .paginator .scrollContainer #imageContainer .testiomial {
+  .paginator .scrollContainer #testimonialContainer .testiomial {
     width: 1000px;
     -o-object-fit: unset;
        object-fit: unset;
     margin: 0px 100px;
   }
-  .paginator .scrollContainer #imageContainer::-webkit-scrollbar {
+  .paginator .scrollContainer #testimonialContainer::-webkit-scrollbar {
     display: none;
   }
   .paginator .circles {
@@ -461,10 +462,10 @@ body {
   }
 }
 @media (min-width: 1400px) {
-  .paginator .scrollContainer #imageContainer {
+  .paginator .scrollContainer #testimonialContainer {
     width: 1200px;
   }
-  .paginator .scrollContainer #imageContainer img {
+  .paginator .scrollContainer #testimonialContainer img {
     height: auto;
     width: 1200px;
   }
@@ -477,9 +478,12 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
+  justify-content: center;
 }
 .redFoxServices .scrollContainer .arrow {
   font-size: 100px;
+  display: none;
+  cursor: pointer;
 }
 .redFoxServices .scrollContainer #cardContainer {
   width: 100%;
@@ -489,8 +493,6 @@ body {
   height: fit-content;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  background-color: rgb(216, 154, 154);
-  border-radius: 20px;
 }
 .redFoxServices .scrollContainer #cardContainer .card {
   position: relative;
@@ -498,10 +500,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   border-radius: 10px;
   box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.3137254902);
   margin-right: 100px;
+  margin-top: 15px;
   flex: 0 0 100%;
   scroll-snap-align: start;
 }
@@ -554,7 +556,7 @@ body {
 }
 .redFoxServices .scrollContainer #cardContainer::-webkit-scrollbar {
   background-color: #FAFAFA;
-  height: 15px;
+  height: 10px;
 }
 .redFoxServices .scrollContainer #cardContainer::-webkit-scrollbar-track {
   background-color: rgb(216, 154, 154);
@@ -564,6 +566,21 @@ body {
   border-radius: 10px;
 }
 
+@media (min-width: 450px) {
+  .redFoxServices .scrollContainer .arrow {
+    display: block;
+    margin: 50px 50px;
+  }
+  .redFoxServices .scrollContainer #cardContainer .card {
+    flex: 0 0 450px;
+  }
+}
+@media (min-width: 1550px) {
+  .redFoxServices .scrollContainer #cardContainer {
+    width: 1550px;
+    border-radius: 20px;
+  }
+}
 .navigationBar {
   height: 100px;
   width: 100%;

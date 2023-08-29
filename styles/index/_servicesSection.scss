@@ -1,13 +1,17 @@
 .redFoxServices{
     width: 100%;
     position: relative;
+
+
     .scrollContainer{
         display: flex;
         align-items: center;
         width: 100%;
-
+        justify-content: center;
         .arrow{
             font-size: 100px;
+            display: none;
+            cursor: pointer;
         }
         #cardContainer{
             width: 100%;
@@ -16,19 +20,19 @@
             height: fit-content;
             scroll-snap-type: x mandatory;
             scroll-behavior: smooth;
-            background-color: rgb(216, 154, 154);
+        
            // box-shadow: 100px 0 200px $primaryColor, -100px 0 200px #191b35 ;
-            border-radius: 20px;
+   
             .card{
                 position: relative;
                 background-color: $white;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                width: 100%;
                 border-radius: 10px;
                 box-shadow: 2px 2px 15px 0px #00000050;
                 margin-right: 100px;
+                margin-top: 15px;
                 flex: 0 0 100%;
                 scroll-snap-align: start;
                 img{
@@ -83,7 +87,7 @@
         }
         #cardContainer::-webkit-scrollbar {
             background-color: $primaryLight;
-            height: 15px;
+            height: 10px;
         }
         #cardContainer::-webkit-scrollbar-track {
             background-color: rgb(216, 154, 154);
@@ -98,4 +102,46 @@
     }
 
 
+}
+
+@media(min-width:450px){
+    .redFoxServices{
+
+
+        .scrollContainer{
+     
+            .arrow{
+                display: block;
+                margin: 50px 50px;
+            }
+            #cardContainer{
+
+                .card{
+      
+                    flex: 0 0 450px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media(min-width:1550px){
+    .redFoxServices{
+
+
+        .scrollContainer{
+
+            #cardContainer{
+                width: 1550px;
+                border-radius: 20px;
+                .card{
+      
+                  
+                }
+            }
+        }
+    }
 }
