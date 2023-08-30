@@ -44,7 +44,7 @@ function autoScroll(){
     cardContainer = document.getElementById("cardContainer")
     if(window.screen.width >= 1550){
         if(cardContainer.scrollLeft + cardContainer.clientWidth >= cardContainer.scrollWidth){
-            document.getElementById("card0").scrollIntoView({behavior: "smooth", block: "nearest", inline: "start"});
+           cardContainer.scrollLeft -= cardContainer.scrollWidth;
             return
         }
         cardContainer.scrollLeft += (document.getElementById("card0").offsetWidth);

@@ -26,7 +26,15 @@
                 border: 3px solid #dbdbdb;
                 margin: 0px 5px;
                 transition: 0.5s;
+
+             
             }
+               .fa-angle-right:hover{
+                    animation: jiggleRight 1.5s ease-in-out infinite;
+                }
+                .fa-angle-left:hover{
+                    animation: jiggleLeft 1.5s ease-in-out infinite;
+                }
             .arrow:hover{
                 color: $primaryColor;
                 border-color: $primaryColor;
@@ -166,3 +174,20 @@
     }
 }
 
+
+@keyframes jiggleRight{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(3px);
+    }
+}
+@keyframes jiggleLeft{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-3px);
+    }
+}

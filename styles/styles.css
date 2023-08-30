@@ -500,6 +500,12 @@ body {
   margin: 0px 5px;
   transition: 0.5s;
 }
+.redFoxServices .scrollContainer .arrows .fa-angle-right:hover {
+  animation: jiggleRight 1.5s ease-in-out infinite;
+}
+.redFoxServices .scrollContainer .arrows .fa-angle-left:hover {
+  animation: jiggleLeft 1.5s ease-in-out infinite;
+}
 .redFoxServices .scrollContainer .arrows .arrow:hover {
   color: #C2272D;
   border-color: #C2272D;
@@ -596,6 +602,22 @@ body {
   .redFoxServices .scrollContainer #cardContainer {
     width: 1550px;
     border-radius: 20px;
+  }
+}
+@keyframes jiggleRight {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+}
+@keyframes jiggleLeft {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-3px);
   }
 }
 .navigationBar {
@@ -771,7 +793,7 @@ body {
     white-space: nowrap;
     padding: 0px 20px;
     padding-bottom: 0px;
-    border-left: 1px solid #B6B6B6;
+    border-left: 1px solid rgba(182, 182, 182, 0.3764705882);
   }
   .navigationBar #menu ul li a {
     font-size: 22px;
