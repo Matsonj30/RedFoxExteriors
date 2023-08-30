@@ -13,17 +13,17 @@
             display: flex;
             align-items: center;
             position: absolute;
-            top: 5px;
-            right: 0px;
+            top: -20px;
+           
             .arrow{
                 height: fit-content;
                 position: relative;
                 font-size: 40px;
                 cursor: pointer;
-                color: #E9E9E9;
+                color: #dbdbdb;
                 z-index: 2;
                 padding: 0px 12px;
-                border: 2px solid #E9E9E9;
+                border: 3px solid #dbdbdb;
                 margin: 0px 5px;
                 transition: 0.5s;
             }
@@ -35,7 +35,7 @@
    
 
         #cardContainer{
-            margin-top: 50px;
+            margin-top: 25px;
             width: 100%;
             overflow-x: scroll;
             display: flex;
@@ -133,7 +133,7 @@
 
 
         .scrollContainer{
-     
+        
            
             #cardContainer{
 
@@ -154,11 +154,8 @@
 
 
         .scrollContainer{
-            .arrows{
-                .arrow{
-              
-                }
-            }
+            
+
       
             #cardContainer{
                 width: 1550px;

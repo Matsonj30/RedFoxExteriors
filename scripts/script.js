@@ -56,7 +56,7 @@ function autoScroll(){
 }
 
 function autoScrollInitiate(){
-    var interval = setInterval(autoScroll, 4000)
+    var interval = setInterval(autoScroll, 5000)
 
     var arrows = document.getElementById("redFoxServices")
     for(let i = 0; i < arrows.length; i+=1){
@@ -70,11 +70,11 @@ function autoScrollInitiate(){
         console.log("HOVER?")
     }
     document.getElementById("redFoxServices").onmouseout = function() {
-        interval = setInterval(autoScroll, 4000);  // Stop auto-scrolling when the mouse is over the container
+        interval = setInterval(autoScroll, 5000);  // Stop auto-scrolling when the mouse is over the container
     }
 }
 
-//autoScrollInitiate()
+autoScrollInitiate()
 
 
 

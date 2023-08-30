@@ -485,8 +485,7 @@ body {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 5px;
-  right: 0px;
+  top: -20px;
 }
 .redFoxServices .scrollContainer .arrows .arrow {
   height: -moz-fit-content;
@@ -494,10 +493,10 @@ body {
   position: relative;
   font-size: 40px;
   cursor: pointer;
-  color: #E9E9E9;
+  color: #dbdbdb;
   z-index: 2;
   padding: 0px 12px;
-  border: 2px solid #E9E9E9;
+  border: 3px solid #dbdbdb;
   margin: 0px 5px;
   transition: 0.5s;
 }
@@ -506,7 +505,7 @@ body {
   border-color: #C2272D;
 }
 .redFoxServices .scrollContainer #cardContainer {
-  margin-top: 50px;
+  margin-top: 25px;
   width: 100%;
   overflow-x: scroll;
   display: flex;
