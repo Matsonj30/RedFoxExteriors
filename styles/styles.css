@@ -481,10 +481,17 @@ body {
   justify-content: center;
 }
 .redFoxServices .scrollContainer .arrow {
-  font-size: 100px;
-  display: none;
+  position: relative;
+  font-size: 50px;
   cursor: pointer;
   color: #C2272D;
+  z-index: 2;
+}
+.redFoxServices .scrollContainer .leftArrow {
+  animation: wiggleArrowRight 1s ease-in-out infinite;
+}
+.redFoxServices .scrollContainer .rightArrow {
+  animation: wiggleArrowLeft 1s ease-in-out infinite;
 }
 .redFoxServices .scrollContainer #cardContainer {
   width: 100%;
@@ -494,6 +501,7 @@ body {
   height: fit-content;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  z-index: 1;
 }
 .redFoxServices .scrollContainer #cardContainer .card {
   position: relative;
@@ -576,10 +584,27 @@ body {
   .redFoxServices .scrollContainer .arrow {
     display: block;
     margin: 50px 50px;
+    font-size: 100px;
   }
   .redFoxServices .scrollContainer #cardContainer {
     width: 1550px;
     border-radius: 20px;
+  }
+}
+@keyframes wiggleArrowRight {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+}
+@keyframes wiggleArrowLeft {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-3px);
   }
 }
 .navigationBar {

@@ -9,10 +9,18 @@
         width: 100%;
         justify-content: center;
         .arrow{
-            font-size: 100px;
-            display: none;
+            position: relative;
+            font-size: 50px;
             cursor: pointer;
             color: $primaryColor;
+            z-index: 2;
+           
+        }
+        .leftArrow{
+            animation: wiggleArrowRight 1s ease-in-out infinite;
+        }
+        .rightArrow{
+            animation: wiggleArrowLeft 1s ease-in-out infinite;
         }
       
         #cardContainer{
@@ -22,8 +30,9 @@
             height: fit-content;
             scroll-snap-type: x mandatory;
             scroll-behavior: smooth;
+            z-index: 1;
         
-           // box-shadow: 100px 0 200px $primaryColor, -100px 0 200px #191b35 ;
+
             
             .card{
                 position: relative;
@@ -136,6 +145,7 @@
             .arrow{
                 display: block;
                 margin: 50px 50px;
+                font-size: 100px;
             }
             #cardContainer{
                 width: 1550px;
@@ -146,5 +156,24 @@
                 }
             }
         }
+    }
+}
+
+@keyframes wiggleArrowRight{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(3px);
+    }
+}
+
+
+@keyframes wiggleArrowLeft{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-3px);
     }
 }

@@ -22,14 +22,19 @@ function scrollToDiv(location){
 
 function changeServiceIndex(direction){
     var currentIndex = getCurrentIndex("services")
-    console.log(currentIndex)
+
   //  console.log(currentIndex)
     nextIndex = currentIndex + direction
     if(nextIndex == -1){
         nextIndex = 5;
     }
-    if(nextIndex == 4){
-        nextIndex = 5;
+    else if(nextIndex == 4){
+        if(direction == 1){
+            nextIndex = 5
+        }
+        else{
+            nextIndex = 3
+        }
     }
 
     else if(nextIndex == 6){
@@ -41,12 +46,44 @@ function changeServiceIndex(direction){
     nextDestination.scrollIntoView({behavior: "smooth", block: "nearest", inline: "start"});
 }
 
+
 function autoScroll(){
     cardContainer = document.getElementById("cardContainer")
-    container.scrollR
+    if(window.screen.width >= 1550){
+        if(cardContainer.scrollLeft + cardContainer.clientWidth >= cardContainer.scrollWidth){
+            document.getElementById("card0").scrollIntoView({behavior: "smooth", block: "nearest", inline: "start"});
+            console.log("End?")
+            return
+        }
+        cardContainer.scrollLeft += (document.getElementById("card0").offsetWidth);
+    }
+
+   
 
 
 }
+
+function autoScrollInitiate(){
+    var interval = setInterval(autoScroll, 4000)
+
+    var arrows = document.getElementById("redFoxServices")
+    for(let i = 0; i < arrows.length; i+=1){
+        arrows[i].onmouseover = function() {
+            clearInterval(interval);  // Stop auto-scrolling when the mouse is over the container
+        }
+    }
+
+
+    document.getElementById("redFoxServices").onmouseover = function() {
+        clearInterval(interval);  // Stop auto-scrolling when the mouse is over the container
+    }
+    document.getElementById("redFoxServices").onmouseout = function() {
+        interval = setInterval(autoScroll, 4000);  // Stop auto-scrolling when the mouse is over the container
+    }
+}
+
+autoScrollInitiate()
+
 
 
 //MULTIUSE JS
@@ -61,12 +98,6 @@ function getCurrentIndex(div){
         scrollContainer = document.getElementById("cardContainer");
         var indicies = scrollContainer.getElementsByClassName("card");
     }
-
-
-
-
-
-
 
     var positionInContainer = scrollContainer.scrollLeft;
     var widthOfTestimonial = indicies[0].offsetWidth; //all same width
