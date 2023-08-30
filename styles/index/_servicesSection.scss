@@ -8,22 +8,34 @@
         align-items: center;
         width: 100%;
         justify-content: center;
-        .arrow{
-            position: relative;
-            font-size: 50px;
-            cursor: pointer;
-            color: $primaryColor;
-            z-index: 2;
-           
+        position: relative;
+        .arrows{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 5px;
+            right: 0px;
+            .arrow{
+                height: fit-content;
+                position: relative;
+                font-size: 40px;
+                cursor: pointer;
+                color: #E9E9E9;
+                z-index: 2;
+                padding: 0px 12px;
+                border: 2px solid #E9E9E9;
+                margin: 0px 5px;
+                transition: 0.5s;
+            }
+            .arrow:hover{
+                color: $primaryColor;
+                border-color: $primaryColor;
+            }
         }
-        .leftArrow{
-            animation: wiggleArrowRight 1s ease-in-out infinite;
-        }
-        .rightArrow{
-            animation: wiggleArrowLeft 1s ease-in-out infinite;
-        }
-      
+   
+
         #cardContainer{
+            margin-top: 50px;
             width: 100%;
             overflow-x: scroll;
             display: flex;
@@ -142,38 +154,18 @@
 
 
         .scrollContainer{
-            .arrow{
-                display: block;
-                margin: 50px 50px;
-                font-size: 100px;
+            .arrows{
+                .arrow{
+              
+                }
             }
+      
             #cardContainer{
                 width: 1550px;
                 border-radius: 20px;
-                .card{
-      
-                  
-                }
+                
             }
         }
     }
 }
 
-@keyframes wiggleArrowRight{
-    0%{
-        transform: translateX(0px);
-    }
-    50%{
-        transform: translateX(3px);
-    }
-}
-
-
-@keyframes wiggleArrowLeft{
-    0%{
-        transform: translateX(0px);
-    }
-    50%{
-        transform: translateX(-3px);
-    }
-}

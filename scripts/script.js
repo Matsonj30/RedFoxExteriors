@@ -22,28 +22,21 @@ function scrollToDiv(location){
 
 function changeServiceIndex(direction){
     var currentIndex = getCurrentIndex("services")
-
-  //  console.log(currentIndex)
-    nextIndex = currentIndex + direction
-    if(nextIndex == -1){
-        nextIndex = 5;
+    var scrollContainer = document.getElementById("cardContainer");
+    cards = scrollContainer.getElementsByClassName("card");
+    cardWidth = cards[0].offsetWidth + 100;
+    //if at start of container and want to go back
+    if(scrollContainer.scrollLeft == 0 && direction == -1){
+        scrollContainer.scrollLeft += scrollContainer.scrollWidth;
     }
-    else if(nextIndex == 4){
-        if(direction == 1){
-            nextIndex = 5
-        }
-        else{
-            nextIndex = 3
-        }
+    // If at end of container and want to go forward
+    else if(((scrollContainer.scrollLeft + scrollContainer.clientWidth) >= scrollContainer.scrollWidth - 100) && direction == 1){
+        scrollContainer.scrollLeft -= scrollContainer.scrollWidth;
     }
-
-    else if(nextIndex == 6){
-  
-        nextIndex = 0;
+    else{
+        scrollContainer.scrollLeft += (cardWidth * direction);
     }
-   
-    var nextDestination = document.getElementById("card"+ (nextIndex)); 
-    nextDestination.scrollIntoView({behavior: "smooth", block: "nearest", inline: "start"});
+ 
 }
 
 
@@ -52,7 +45,6 @@ function autoScroll(){
     if(window.screen.width >= 1550){
         if(cardContainer.scrollLeft + cardContainer.clientWidth >= cardContainer.scrollWidth){
             document.getElementById("card0").scrollIntoView({behavior: "smooth", block: "nearest", inline: "start"});
-            console.log("End?")
             return
         }
         cardContainer.scrollLeft += (document.getElementById("card0").offsetWidth);
@@ -73,16 +65,16 @@ function autoScrollInitiate(){
         }
     }
 
-
     document.getElementById("redFoxServices").onmouseover = function() {
         clearInterval(interval);  // Stop auto-scrolling when the mouse is over the container
+        console.log("HOVER?")
     }
     document.getElementById("redFoxServices").onmouseout = function() {
         interval = setInterval(autoScroll, 4000);  // Stop auto-scrolling when the mouse is over the container
     }
 }
 
-autoScrollInitiate()
+//autoScrollInitiate()
 
 
 
@@ -99,16 +91,16 @@ function getCurrentIndex(div){
         var indicies = scrollContainer.getElementsByClassName("card");
     }
 
-    var positionInContainer = scrollContainer.scrollLeft;
-    var widthOfTestimonial = indicies[0].offsetWidth; //all same width
 
+
+
+    var positionInContainer = scrollContainer.scrollLeft;
+    var widthOfTestimonial = indicies[0].offsetWidth ; //all same width
     var currentIndex = Math.floor(positionInContainer / widthOfTestimonial);
-    //If you add too much padding, it may get the wrong index if you add a lot of elements
+    
 
     return currentIndex;
 }
-
-
 
 //TESTIMONIAL JS
 
