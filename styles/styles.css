@@ -341,6 +341,38 @@ body {
   background: rgb(194, 39, 45);
   background: linear-gradient(222deg, rgb(194, 39, 45) 0%, rgb(210, 87, 49) 100%);
 }
+.paginator .lines .topBlackLine, .paginator .lines .bottomBlackLine, .paginator .lines .bottomRedLine, .paginator .lines .topRedLine {
+  position: absolute;
+  display: block;
+  width: 20vw;
+  height: 10px;
+  background-color: #111111;
+  top: -20px;
+  right: 0px;
+  border-radius: 10px 0px 0px 10px;
+  z-index: -1;
+}
+.paginator .lines .topRedLine {
+  top: -13px;
+  width: 22vw;
+  background: rgb(194, 39, 45);
+  background: linear-gradient(222deg, rgb(194, 39, 45) 0%, rgb(210, 87, 49) 100%);
+  z-index: 2;
+}
+.paginator .lines .bottomBlackLine, .paginator .lines .bottomRedLine {
+  top: unset;
+  right: unset;
+  bottom: -20px;
+  left: 0px;
+  border-radius: 0px 10px 10px 0px;
+}
+.paginator .lines .bottomRedLine {
+  bottom: -13px;
+  background: rgb(194, 39, 45);
+  background: linear-gradient(222deg, rgb(194, 39, 45) 0%, rgb(210, 87, 49) 100%);
+  z-index: 2;
+  width: 22vw;
+}
 .paginator .fa-quote-left {
   color: #FAFAFA;
   font-size: 40px;
@@ -401,7 +433,7 @@ body {
   height: 15px;
 }
 .paginator .scrollContainer #testimonialContainer::-webkit-scrollbar-track {
-  background-color: #1e86b3;
+  background-color: #111111;
 }
 .paginator .scrollContainer #testimonialContainer::-webkit-scrollbar-thumb {
   background-color: #FAFAFA;

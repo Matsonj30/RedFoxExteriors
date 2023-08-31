@@ -10,6 +10,45 @@
     background: rgb(194,39,45);
     background: linear-gradient(222deg, rgba(194,39,45,1) 0%, rgba(210,87,49,1) 100%);
 
+    .lines{
+        .topBlackLine{
+            position: absolute;
+            display: block;
+            width: 20vw;
+            height: 10px;
+            background-color: $black;
+            top: -20px;
+            right: 0px;
+            border-radius: 10px 0px 0px 10px;
+            z-index: -1;
+        }
+        .topRedLine{
+            @extend .topBlackLine;
+            top: -13px;
+            width: 22vw;
+            background: rgb(194,39,45);
+            background: linear-gradient(222deg, rgba(194,39,45,1) 0%, rgba(210,87,49,1) 100%);
+            z-index: 2;
+        }
+
+        .bottomBlackLine{
+            @extend .topBlackLine;
+            top: unset;
+            right: unset;
+            bottom: -20px;
+            left: 0px;
+            border-radius: 0px 10px 10px 0px;
+        }
+        .bottomRedLine{
+            @extend .bottomBlackLine;
+            bottom: -13px;
+            background: rgb(194,39,45);
+            background: linear-gradient(222deg, rgba(194,39,45,1) 0%, rgba(210,87,49,1) 100%);
+            z-index: 2;
+            width: 22vw;
+        }
+    }
+ 
     .fa-quote-left{
         color: $white;
         font-size: 40px;
@@ -73,7 +112,7 @@
             height: 15px;
         }
         #testimonialContainer::-webkit-scrollbar-track {
-            background-color: $secondaryColorDark;
+            background-color: $black;
         }
         #testimonialContainer::-webkit-scrollbar-thumb {
             background-color: $white;
