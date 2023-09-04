@@ -11,7 +11,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins";
+  font-family: "Sahitya";
 }
 
 body {
@@ -88,37 +88,48 @@ body {
 }
 
 .landing {
-  background-image: url("../../images/heroImage2.jpg");
-  height: 750px;
+  position: relative;
+  background-image: url("../../images/heroImageDark.png");
+  height: -moz-fit-content;
+  height: fit-content;
   background-size: cover;
-  background-position: center -200px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .landing .textContent {
-  background-color: rgba(194, 39, 45, 0.5);
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
-  border-radius: 0px 50px 0px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0px 20px;
   min-height: 420px;
-  max-width: 685px;
+  max-width: 950px;
   color: #FAFAFA;
 }
 .landing .textContent .title {
   font-size: 28px;
   padding: 10px 0px;
   text-align: center;
+  font-family: "bold";
+  letter-spacing: 1px;
+  transform: translateY(15px);
 }
-.landing .textContent b {
+.landing .textContent .slogan {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 50px;
+}
+.landing .textContent .slogan b {
   font-size: 50px;
   text-align: center;
-  padding: 10px 0px;
-  padding-bottom: 30px;
+}
+.landing .textContent .slogan #changingWord {
+  background-image: linear-gradient(90deg, rgb(194, 39, 45) 30%, rgb(210, 87, 49) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding-bottom: 15px;
 }
 .landing .textContent .line {
   display: inline-block;
@@ -129,7 +140,7 @@ body {
 .landing .textContent .supportingDetails {
   font-size: 20px;
   text-align: center;
-  padding: 30px 5px;
+  padding: 10px 5px;
   max-width: 600px;
 }
 .landing .textContent .buttons {
@@ -137,11 +148,52 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 .landing .textContent .buttons button {
   margin: 5px 10px;
 }
+.landing .textContent .landingArrows {
+  display: flex;
+  flex-direction: column;
+  line-height: 0px;
+  animation: jiggle 1.5s infinite;
+  margin-top: 50px;
+}
+.landing .textContent .landingArrows .fa {
+  font-size: 50px;
+  transform: rotate(90deg);
+}
+.landing .textContent .landingArrows .fa:nth-child(2) {
+  transform: rotate(90deg) translateX(-35px);
+}
 
+@media (min-width: 850px) {
+  .landing .textContent {
+    margin-top: 100px;
+  }
+  .landing .textContent .title {
+    font-size: 32px;
+    transform: translateY(15px);
+  }
+  .landing .textContent .slogan {
+    line-height: 90px;
+  }
+  .landing .textContent .slogan b {
+    font-size: 100px;
+  }
+  .landing .textContent .slogan #changingWord {
+    padding-bottom: 20px;
+  }
+}
+@keyframes jiggle {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
 .whyRedFox .whyReasons {
   width: 100%;
   display: flex;
@@ -782,8 +834,8 @@ body {
     width: 100%;
     height: -moz-fit-content;
     height: fit-content;
-    position: fixed;
-    background-color: #FAFAFA;
+    position: absolute;
+    background-color: transparent;
   }
   .navigationBar img {
     align-self: flex-start;
@@ -795,7 +847,7 @@ body {
     display: none;
   }
   .navigationBar #menu {
-    background-color: #FAFAFA;
+    background-color: transparent;
     transform: unset !important;
     position: relative;
     width: -moz-fit-content;
@@ -825,11 +877,11 @@ body {
     white-space: nowrap;
     padding: 0px 20px;
     padding-bottom: 0px;
-    border-left: 1px solid rgba(182, 182, 182, 0.3764705882);
+    border: none;
   }
   .navigationBar #menu ul li a {
-    font-size: 22px;
-    color: #111111;
+    font-size: 20px;
+    color: #FAFAFA;
     letter-spacing: 1px;
     width: -moz-fit-content;
     width: fit-content;

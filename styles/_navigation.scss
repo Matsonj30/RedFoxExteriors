@@ -8,8 +8,6 @@
             padding-left: 30px;
    
         }
-
-
         a{
             text-decoration: none;
             button{
@@ -147,15 +145,14 @@
         justify-content: space-around;
         width: 100%;
         height: fit-content;
-        position: fixed;
-        background-color: $white;
+        position: absolute;
+        background-color: transparent;
         img{
             align-self: flex-start;
             
         }
         a{
             button{
-            
                 display: unset;
             }
         }
@@ -163,7 +160,7 @@
             display: none;
         }
         #menu{
-            background-color: $white;
+            background-color: transparent;
             transform: unset !important;
             position: relative;
             width: fit-content;
@@ -188,10 +185,10 @@
                     white-space: nowrap;
                     padding: 0px 20px;
                     padding-bottom: 0px;
-                    border-left: 1px solid #b6b6b660;
+                    border: none;
                     a{
-                        font-size: 22px;
-                        color: $black;
+                        font-size: 20px;
+                        color: $white;
                         letter-spacing: 1px;
                         width: fit-content;
                         display: inline-block;
