@@ -1,3 +1,8 @@
+
+changeKeyWord()
+autoScrollInitiate()
+
+
 function burgerMenu(){
     var checkbox = document.getElementById("hamburgerCheckbox");
     var menu = document.getElementById("menu");
@@ -15,6 +20,46 @@ function burgerMenu(){
 
 function scrollToDiv(location){
     document.getElementById(location).scrollIntoView({behaviour: "smooth"});
+
+}
+
+function changeKeyWord(){
+    var keyWord = document.getElementById("changingWord");
+    console.log(keyWord.innerHTML);
+
+    setInterval(function(){
+        switch(keyWord.innerHTML){
+            case "Sheeting":
+                keyWord.innerHTML = "Roofing";
+                break;
+            case "Roofing":
+                keyWord.innerHTML = "Siding";
+                break;
+            case "Siding":
+                keyWord.innerHTML = "Decks";
+                break;
+            case "Decks":
+                keyWord.innerHTML = "Demolition";
+                break;
+            case "Demolition":
+                keyWord.innerHTML = "Fencing";
+                break;
+            case "Fencing":
+                keyWord.innerHTML = "Cleanup";
+                break;
+            case "Cleanup":
+                keyWord.innerHTML = "Concrete";
+                break;
+            case "Concrete":
+                keyWord.innerHTML = "Craftmanship";
+                break;
+        }
+
+
+
+    }, 450)
+
+
 
 }
 
@@ -67,14 +112,13 @@ function autoScrollInitiate(){
 
     document.getElementById("redFoxServices").onmouseover = function() {
         clearInterval(interval);  // Stop auto-scrolling when the mouse is over the container
-        console.log("HOVER?")
     }
     document.getElementById("redFoxServices").onmouseout = function() {
         interval = setInterval(autoScroll, 5000);  // Stop auto-scrolling when the mouse is over the container
     }
 }
 
-autoScrollInitiate()
+
 
 
 
@@ -146,3 +190,6 @@ function changeCircleColor(currentIndex){
         document.getElementById("circle4").style.backgroundColor = "#6aabe0";
     }
 }
+
+
+
