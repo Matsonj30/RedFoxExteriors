@@ -1,9 +1,8 @@
 footer{
     margin-top: 100px;
     color: $white !important;
-    background-color: $black;
     display: flex;
-    background-image: url("../images/footerImage.png");
+    background-color: $black;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
@@ -160,7 +159,7 @@ footer{
 
 
 .copyright{
-    background-color: #111111cb;
+    background-color: #0c0c0c;
     width: 100%;
     color: $white;
     display: flex;

@@ -19,7 +19,7 @@ function burgerMenu(){
 }
 
 function scrollToDiv(location){
-    document.getElementById(location).scrollIntoView({behaviour: "smooth"});
+    document.getElementById(location).scrollIntoView({behavior: "smooth"});
 
 }
 
@@ -92,7 +92,7 @@ function autoScroll(){
            cardContainer.scrollLeft -= cardContainer.scrollWidth;
             return
         }
-        cardContainer.scrollLeft += (document.getElementById("card0").offsetWidth);
+        cardContainer.scrollLeft += (document.getElementById("card0").offsetWidth + 100);
     }
 
    

@@ -51,9 +51,8 @@
             scroll-snap-type: x mandatory;
             scroll-behavior: smooth;
             z-index: 1;
-        
-
-            
+      
+          
             .card{
                 position: relative;
                 background-color: $white;
@@ -61,17 +60,23 @@
                 flex-direction: column;
                 align-items: center;
                 border-radius: 10px;
-                box-shadow: 2px 2px 15px 0px #00000050;
+                box-shadow: 0px 0px 8px 0px rgba(29, 29, 29, 0.26);
                 margin-right: 100px;
                 margin-top: 15px;
+                margin-bottom: 5px;
                 flex: 0 0 100%;
                 scroll-snap-align: start;
+
+                
+                
+
                 img{
                     width: 100%;
                     border-radius: 10px 10px 0px 0px;
                     height: 200px;
                     object-fit: cover;
                 }
+                
                 .cardSymbol{
               
                     width: 80px;
@@ -83,10 +88,10 @@
                     align-items: center;
                     position: absolute;
                     top: 160px;
-                    box-shadow: 2px 2px 15px 0px #00000050;
+                    box-shadow: 0px 0px 15px 0px #00000050;
                     img{
-                        width: 50px;
-                        height: 50px;
+                        width: 65px;
+                        height: 65px;
                     }
                 }
 
@@ -115,6 +120,16 @@
                     margin-bottom: 10px;
                 }
             }
+            #card1, #card4{
+                .cardSymbol{
+                    img{
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        
+          
         }
 
         #cardContainer::-webkit-scrollbar {
@@ -144,11 +159,17 @@
         
            
             #cardContainer{
-
+                
                 .card{
       
                     flex: 0 0 450px;
+                    margin-bottom: 15px;
                 }
+            }
+            #cardContainer::-webkit-scrollbar {
+                background-color: $primaryLight;
+                height: 10px;
+                display: none;
             }
         }
     }
@@ -162,14 +183,31 @@
 
 
         .scrollContainer{
-            
+         
 
       
             #cardContainer{
                 width: 1550px;
                 border-radius: 20px;
+                .card{
+                    scroll-snap-align: unset;
+                }
+             
+                .card:first-child{
+                    margin-left: 5px;
+                }
+                    
+                
+                
                 
             }
+            
+            #cardContainer::-webkit-scrollbar {
+                background-color: $primaryLight;
+                height: 10px;
+               
+            }
+          
         }
     }
 }
