@@ -253,6 +253,7 @@ body {
     margin: unset;
     margin-top: 10px;
     margin-bottom: 15px;
+    font-size: 18px;
   }
 }
 .aboutRedFox {
@@ -374,6 +375,14 @@ body {
     justify-content: center;
     flex-direction: unset;
     align-items: unset;
+  }
+  .aboutRedFox b {
+    text-align: start;
+  }
+  .aboutRedFox p {
+    font-size: 18px;
+    text-align: start;
+    margin-right: 5px;
   }
   .aboutRedFox img {
     margin: unset;
@@ -540,6 +549,9 @@ body {
     -o-object-fit: unset;
        object-fit: unset;
     margin: 0px 100px;
+  }
+  .paginator .scrollContainer #testimonialContainer .testiomial p {
+    font-size: 18px;
   }
   .paginator .scrollContainer #testimonialContainer::-webkit-scrollbar {
     display: none;

@@ -131,7 +131,14 @@
         justify-content: center;
         flex-direction: unset;
         align-items: unset;
-
+        b{
+            text-align: start;
+        }
+        p{
+            font-size: 18px;
+            text-align: start;
+            margin-right: 5px;
+        }
 
         img{
             margin: unset;
