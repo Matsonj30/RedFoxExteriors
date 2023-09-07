@@ -1,0 +1,54 @@
+.contactInformation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: $white;
+    margin-top: 100px;
+
+    .contactMethod{
+        width: 350px;
+        height: 300px;
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 7px 60px -30px rgba(0,0,0,0.5);
+        cursor: pointer;
+        text-decoration: none;
+        margin: 30px 5px;
+       
+        .fa{
+            width: 70px;
+            height: 70px;
+            background-color: $primaryColor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            font-size: 30px;
+            border-radius: 5px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        b{
+            color: $black;
+            font-family: "bold";
+            font-size: 25px;
+        }
+        p{
+            color: $black;
+            font-size: 18px;
+        }
+    }
+}
+
+@media(min-width:600px){
+
+
+    .contactInformation{
+        .contactMethod{
+            margin: 30px 30px;
+        }
+    }
+}

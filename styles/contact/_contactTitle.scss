@@ -1,0 +1,59 @@
+.contactUsTitle{
+    display: flex;
+    flex-wrap: wrap;
+   
+    justify-content: center;
+    margin-top: 0px;
+    img{
+        width: 400px;
+        height: 400px;
+        display: none;
+        object-fit: cover;
+    }
+
+    .titleSection{
+        justify-content: center;
+    }
+    .contactText{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        a{
+            text-decoration: none;
+            font-family: "bold";
+            color: $secondaryColor;
+        }
+        p{
+            max-width: 500px;
+            margin: 0px 5px;
+            margin-bottom: 20px;
+            text-align: center;
+            
+        }
+
+    }
+}
+
+@media(min-width:1000px){
+    .contactUsTitle{
+
+
+        img{
+            display: block;
+            border-radius: 0px;
+        }
+        .contactText{
+            margin-left: 50px;
+            text-align: unset;
+
+            p{
+                font-size: 18px;
+            }
+        }
+        .titleSection{
+            justify-content: unset;
+        }
+    }
+
+}

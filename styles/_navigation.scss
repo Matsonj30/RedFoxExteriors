@@ -88,6 +88,15 @@
                 }
             }
         }
+        a{
+            button{
+                letter-spacing: 1px;
+                .fa{
+                    transform: translateY(4px);
+                    font-size: 25px;
+                }
+            }
+        }
     }
     .hamburgerMenu{
         position: absolute;

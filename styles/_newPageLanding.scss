@@ -1,0 +1,39 @@
+.newPageLanding{
+    background-image: url('../images/heroImageDark.png');
+    background-attachment: fixed;
+    width: 100%;
+    height: fit-content;
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .text{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        
+        b{
+            font-size: 80px;
+            font-family: "bold";
+            color: $white;
+            line-height: 70px;
+        }
+    }
+}
+
+
+@media(min-width:1000px){
+
+    .newPageLanding{
+
+        .text{
+            b{
+                font-size: 100px;
+            }
+        }
+    }
+
+
+}

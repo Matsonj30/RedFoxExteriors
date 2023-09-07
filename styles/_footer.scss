@@ -1,5 +1,5 @@
 footer{
-    margin-top: 100px;
+    margin-top: 0px;
     color: $white !important;
     display: flex;
     background-color: $black;
@@ -104,27 +104,6 @@ footer{
 }
 
 
-@media(min-width:1100px){
-    footer{
-        .section{
-            ul{
-                width: fit-content;
-                margin-left: 30px;
-            }
-        }
-    }
-    .copyright{
-        p{
-            font-size: 16px;
-        }
-    }
-    .hours{
-        ul{
-            margin-left: 0px !important;
-        }
-    }
-}
-
 
 
 @media(min-width:800px){
@@ -141,6 +120,7 @@ footer{
         }
     }
 }
+
 @media(min-width:1300px){
     footer{
         justify-content: center;

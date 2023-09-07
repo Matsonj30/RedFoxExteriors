@@ -87,6 +87,14 @@ body {
   background-color: #9b1f23;
 }
 
+.redWord {
+  background-image: linear-gradient(90deg, rgb(194, 39, 45) 30%, rgb(210, 87, 49) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent !important;
+  padding-bottom: 15px;
+}
+
 .landing {
   position: relative;
   background-image: url("../../images/heroImageDark.png");
@@ -123,13 +131,6 @@ body {
 .landing .textContent .slogan b {
   font-size: 50px;
   text-align: center;
-}
-.landing .textContent .slogan #changingWord {
-  background-image: linear-gradient(90deg, rgb(194, 39, 45) 30%, rgb(210, 87, 49) 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-  padding-bottom: 15px;
 }
 .landing .textContent .line {
   display: inline-block;
@@ -258,6 +259,7 @@ body {
 }
 .aboutRedFox {
   margin-top: 50px;
+  margin-bottom: 50px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -295,31 +297,31 @@ body {
   margin: 10px 10px;
   height: 200px;
 }
-.aboutRedFox form {
+.aboutRedFox .indexForm {
   background-color: #111111;
   color: #FAFAFA;
   max-width: 385px;
   padding: 10px 10px;
   border-radius: 10px;
 }
-.aboutRedFox form .formTitle {
+.aboutRedFox .indexForm .formTitle {
   font-size: 30px;
   margin-bottom: 20px;
 }
-.aboutRedFox form .formTitle b:nth-child(2) {
+.aboutRedFox .indexForm .formTitle b:nth-child(2) {
   color: #C2272D;
 }
-.aboutRedFox form p {
+.aboutRedFox .indexForm p {
   font-family: "bold";
   font-size: 20px;
   margin: 5px 0px;
   max-width: 405px;
 }
-.aboutRedFox form input:focus {
+.aboutRedFox .indexForm input:focus {
   outline: none !important;
   background-color: rgb(253, 218, 218);
 }
-.aboutRedFox form .details {
+.aboutRedFox .indexForm .details, .aboutRedFox .indexForm .contactForm .contactPageForm .referral, .contactForm .contactPageForm .aboutRedFox .indexForm .referral {
   width: 160px;
   height: 26px;
   color: #70838F;
@@ -330,13 +332,13 @@ body {
   background-color: #fafafa;
   padding: 2px 2px;
 }
-.aboutRedFox form .checkboxes {
+.aboutRedFox .indexForm .checkboxes {
   margin: 8px 0px;
 }
-.aboutRedFox form .checkboxes .box {
+.aboutRedFox .indexForm .checkboxes .box {
   margin: 0px 2px;
 }
-.aboutRedFox form .referral {
+.aboutRedFox .indexForm .referral {
   border-radius: 5px;
   width: 98%;
   border: none;
@@ -344,7 +346,7 @@ body {
   padding: 2px 2px;
   font-size: 14px;
 }
-.aboutRedFox form textarea {
+.aboutRedFox .indexForm textarea {
   resize: none;
   width: 98%;
   border: none;
@@ -353,12 +355,12 @@ body {
   padding: 2px 2px;
   font-size: 14px;
 }
-.aboutRedFox form textarea:focus {
+.aboutRedFox .indexForm textarea:focus {
   outline: none !important;
   background-color: rgb(253, 218, 218);
   border: none;
 }
-.aboutRedFox form button {
+.aboutRedFox .indexForm button {
   margin-top: 10px;
   width: 150px;
   height: 40px;
@@ -740,6 +742,364 @@ body {
     transform: translateX(-3px);
   }
 }
+.contactUsTitle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0px;
+}
+.contactUsTitle img {
+  width: 400px;
+  height: 400px;
+  display: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contactUsTitle .titleSection {
+  justify-content: center;
+}
+.contactUsTitle .contactText {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactUsTitle .contactText a {
+  text-decoration: none;
+  font-family: "bold";
+  color: rgb(210, 87, 49);
+}
+.contactUsTitle .contactText p {
+  max-width: 500px;
+  margin: 0px 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  .contactUsTitle img {
+    display: block;
+    border-radius: 0px;
+  }
+  .contactUsTitle .contactText {
+    margin-left: 50px;
+    text-align: unset;
+  }
+  .contactUsTitle .contactText p {
+    font-size: 18px;
+  }
+  .contactUsTitle .titleSection {
+    justify-content: unset;
+  }
+}
+.contactInformation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  background-color: #FAFAFA;
+  margin-top: 100px;
+}
+.contactInformation .contactMethod {
+  width: 350px;
+  height: 300px;
+  background-color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 7px 60px -30px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-decoration: none;
+  margin: 30px 5px;
+}
+.contactInformation .contactMethod .fa {
+  width: 70px;
+  height: 70px;
+  background-color: #C2272D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FAFAFA;
+  font-size: 30px;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.contactInformation .contactMethod b {
+  color: #111111;
+  font-family: "bold";
+  font-size: 25px;
+}
+.contactInformation .contactMethod p {
+  color: #111111;
+  font-size: 18px;
+}
+
+@media (min-width: 600px) {
+  .contactInformation .contactMethod {
+    margin: 30px 30px;
+  }
+}
+.aboutRedFox {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutRedFox .aboutText {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  text-align: center;
+  padding: 0px 5px;
+  justify-self: flex-start;
+}
+.aboutRedFox .aboutText b {
+  font-size: 24px;
+  font-family: "bold";
+}
+.aboutRedFox .aboutText .red {
+  font-size: 30px;
+  font-family: "bold";
+  color: #C2272D;
+  transform: translateY(15px);
+}
+.aboutRedFox .aboutText p {
+  padding: 10px 0px;
+  padding-top: 5px;
+  line-height: 25px;
+  color: #70838F;
+}
+.aboutRedFox img {
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: min(100%, 405px);
+  margin: 10px 10px;
+  height: 200px;
+}
+.aboutRedFox .indexForm {
+  background-color: #111111;
+  color: #FAFAFA;
+  max-width: 385px;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+.aboutRedFox .indexForm .formTitle {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.aboutRedFox .indexForm .formTitle b:nth-child(2) {
+  color: #C2272D;
+}
+.aboutRedFox .indexForm p {
+  font-family: "bold";
+  font-size: 20px;
+  margin: 5px 0px;
+  max-width: 405px;
+}
+.aboutRedFox .indexForm input:focus {
+  outline: none !important;
+  background-color: rgb(253, 218, 218);
+}
+.aboutRedFox .indexForm .details, .aboutRedFox .indexForm .contactForm .contactPageForm .referral, .contactForm .contactPageForm .aboutRedFox .indexForm .referral {
+  width: 160px;
+  height: 26px;
+  color: #70838F;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  margin: 5px 2px;
+  background-color: #fafafa;
+  padding: 2px 2px;
+}
+.aboutRedFox .indexForm .checkboxes {
+  margin: 8px 0px;
+}
+.aboutRedFox .indexForm .checkboxes .box {
+  margin: 0px 2px;
+}
+.aboutRedFox .indexForm .referral {
+  border-radius: 5px;
+  width: 98%;
+  border: none;
+  margin-bottom: 10px;
+  padding: 2px 2px;
+  font-size: 14px;
+}
+.aboutRedFox .indexForm textarea {
+  resize: none;
+  width: 98%;
+  border: none;
+  height: 150px;
+  border-radius: 5px;
+  padding: 2px 2px;
+  font-size: 14px;
+}
+.aboutRedFox .indexForm textarea:focus {
+  outline: none !important;
+  background-color: rgb(253, 218, 218);
+  border: none;
+}
+.aboutRedFox .indexForm button {
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "bold";
+}
+
+@media (min-width: 1260px) {
+  .aboutRedFox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: unset;
+    align-items: unset;
+  }
+  .aboutRedFox b {
+    text-align: start;
+  }
+  .aboutRedFox p {
+    font-size: 18px;
+    text-align: start;
+    margin-right: 5px;
+  }
+  .aboutRedFox img {
+    margin: unset;
+    height: auto;
+  }
+  .aboutRedFox form {
+    margin-left: 10px;
+  }
+}
+.contactForm {
+  background-image: url("/images/shinglesBackground.png");
+  background-attachment: fixed;
+  height: 1000px;
+  background-size: cover;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contactForm .wrapper {
+  width: 100%;
+}
+.contactForm h1 {
+  color: #FAFAFA;
+  font-size: 50px;
+  text-align: center;
+  line-height: 60px;
+  font-family: "bold";
+  margin-top: 15px;
+}
+.contactForm span {
+  color: #C2272D;
+}
+.contactForm .contactPageForm {
+  color: #FAFAFA;
+  max-width: 1500px;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+.contactForm .contactPageForm p {
+  font-family: "bold";
+  font-size: 20px;
+  margin: 5px 0px;
+  max-width: 405px;
+}
+.contactForm .contactPageForm input:focus {
+  outline: none !important;
+  background-color: rgb(253, 218, 218);
+}
+.contactForm .contactPageForm .details, .contactForm .contactPageForm .referral {
+  width: 100%;
+  max-width: 1200px;
+  height: 50px;
+  color: #70838F;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  margin: 5px 2px;
+  background-color: #fafafa;
+  padding: 2px 2px;
+}
+.contactForm .contactPageForm .checkboxes {
+  margin: 8px 0px;
+}
+.contactForm .contactPageForm .checkboxes .box {
+  margin: 0px 2px;
+  width: 15px;
+  height: 15px;
+}
+.contactForm .contactPageForm .referral {
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  margin-bottom: 10px;
+  padding: 2px 2px;
+  font-size: 14px;
+}
+.contactForm .contactPageForm textarea {
+  resize: none;
+  width: 100%;
+  max-width: 1200px;
+  border: none;
+  height: 150px;
+  border-radius: 5px;
+  padding: 2px 2px;
+  font-size: 14px;
+}
+.contactForm .contactPageForm textarea:focus {
+  outline: none !important;
+  background-color: rgb(253, 218, 218);
+  border: none;
+}
+.contactForm .contactPageForm button {
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "bold";
+}
+
+.newPageLanding {
+  background-image: url("../images/heroImageDark.png");
+  background-attachment: fixed;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-size: cover;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newPageLanding .text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.newPageLanding .text b {
+  font-size: 80px;
+  font-family: "bold";
+  color: #FAFAFA;
+  line-height: 70px;
+}
+
+@media (min-width: 1000px) {
+  .newPageLanding .text b {
+    font-size: 100px;
+  }
+}
 .navigationBar {
   height: 100px;
   width: 100%;
@@ -820,6 +1180,14 @@ body {
   color: #FAFAFA;
   letter-spacing: 2px;
 }
+.navigationBar a button {
+  letter-spacing: 1px;
+}
+.navigationBar a button .fa {
+  transform: translateY(4px);
+  font-size: 25px;
+}
+
 .hamburgerMenu {
   position: absolute;
   z-index: 7;
@@ -939,7 +1307,7 @@ body {
   }
 }
 footer {
-  margin-top: 100px;
+  margin-top: 0px;
   color: #FAFAFA !important;
   display: flex;
   background-color: #111111;
@@ -1026,19 +1394,6 @@ footer .contact .fa-instagram {
   padding-right: 2px;
 }
 
-@media (min-width: 1100px) {
-  footer .section ul {
-    width: -moz-fit-content;
-    width: fit-content;
-    margin-left: 30px;
-  }
-  .copyright p {
-    font-size: 16px;
-  }
-  .hours ul {
-    margin-left: 0px !important;
-  }
-}
 @media (min-width: 800px) {
   footer {
     flex-direction: row;
