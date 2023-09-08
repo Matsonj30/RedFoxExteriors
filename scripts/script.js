@@ -111,6 +111,7 @@ function autoScrollInitiate(){
     }
 
     document.getElementById("redFoxServices").onmouseover = function() {
+        console.log("HOVER")
         clearInterval(interval);  // Stop auto-scrolling when the mouse is over the container
     }
     document.getElementById("redFoxServices").onmouseout = function() {
@@ -149,7 +150,6 @@ function getCurrentIndex(div){
 //TESTIMONIAL JS
 
 document.getElementById("testimonialContainer").addEventListener("scroll", scrollEvent);
-console.log(document.getElementById("imageContainer"))
 
 function changeTestIndex(direction){
 
