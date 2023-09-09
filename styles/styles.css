@@ -986,7 +986,8 @@ body {
 .contactForm {
   background-image: url("/images/shinglesBackground.png");
   background-attachment: fixed;
-  height: 1000px;
+  height: -moz-fit-content;
+  height: fit-content;
   background-size: cover;
   margin-top: 50px;
   display: flex;
