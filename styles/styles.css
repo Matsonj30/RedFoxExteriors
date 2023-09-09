@@ -683,9 +683,15 @@ body {
   font-size: 20px;
   margin-bottom: 10px;
 }
-.redFoxServices .scrollContainer #cardContainer #card1 .cardSymbol img, .redFoxServices .scrollContainer #cardContainer #card4 .cardSymbol img {
+.redFoxServices .scrollContainer #cardContainer #card1 .cardSymbol img, .redFoxServices .scrollContainer #cardContainer #card2 .cardSymbol img, .redFoxServices .scrollContainer #cardContainer #card4 .cardSymbol img, .redFoxServices .scrollContainer #cardContainer #card5 .cardSymbol img, .redFoxServices .scrollContainer #cardContainer #card6 .cardSymbol img, .redFoxServices .scrollContainer #cardContainer #card8 .cardSymbol img {
   width: 50px;
   height: 50px;
+}
+.redFoxServices .scrollContainer #cardContainer #card1 .cardSymbol img {
+  transform: translate(-6px, 3px);
+}
+.redFoxServices .scrollContainer #cardContainer #card4 .cardSymbol img {
+  transform: translate(0px, -3px);
 }
 .redFoxServices .scrollContainer #cardContainer::-webkit-scrollbar {
   background-color: #FAFAFA;
