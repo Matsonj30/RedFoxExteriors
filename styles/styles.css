@@ -2,11 +2,13 @@
   font-family: "Sahitya";
   font-style: normal;
   src: url(../fonts/Sahitya/Sahitya-Regular.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: "bold";
   font-style: normal;
   src: url(../fonts/Sahitya/Sahitya-Bold.ttf);
+  font-display: swap;
 }
 * {
   margin: 0;

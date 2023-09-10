@@ -22,12 +22,14 @@ $black: #111111;
   font-family: "Sahitya";
   font-style: normal;
   src: url(../fonts/Sahitya/Sahitya-Regular.ttf);
+  font-display: swap;
 
 }
 @font-face{
   font-family: "bold";
   font-style: normal;
   src: url(../fonts/Sahitya/Sahitya-Bold.ttf);
+  font-display: swap;
 }
 
 //-------------------------------FONTS---------------------------------
@@ -37,6 +39,7 @@ $black: #111111;
   margin: 0;   
   padding: 0;
   font-family: "Sahitya";
+
 }
 body{
   background-color: $white;

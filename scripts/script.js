@@ -18,9 +18,9 @@ function burgerMenu(){
     }
 }
 
-function scrollToDiv(location){
+function scrollToDiv(location, pageURL = null){
     document.getElementById(location).scrollIntoView({behavior: "smooth"});
-
+    console.log(window.location.href)
 }
 
 function changeKeyWord(){
