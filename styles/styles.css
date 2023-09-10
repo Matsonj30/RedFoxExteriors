@@ -1111,6 +1111,7 @@ body {
 }
 .navigationBar a {
   text-decoration: none;
+  cursor: pointer;
 }
 .navigationBar a button {
   display: none;
