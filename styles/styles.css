@@ -546,15 +546,6 @@ body {
     width: 1000px;
     margin: 0px 30px;
   }
-  .paginator .scrollContainer #testimonialContainer .testiomial {
-    width: 1000px;
-    -o-object-fit: unset;
-       object-fit: unset;
-    margin: 0px 100px;
-  }
-  .paginator .scrollContainer #testimonialContainer .testiomial p {
-    font-size: 18px;
-  }
   .paginator .scrollContainer #testimonialContainer::-webkit-scrollbar {
     display: none;
   }

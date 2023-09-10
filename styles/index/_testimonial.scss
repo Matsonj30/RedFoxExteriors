@@ -71,6 +71,7 @@
                 line-height: 50px;
                 font-size: 100px;
                 color: $white;
+            
             }
         }
 
@@ -176,15 +177,6 @@
             width: 1000px;
             margin: 0px 30px;
            
-            .testiomial{
-                width: 1000px;
-                object-fit: unset;
-                margin: 0px 100px;
-
-                p{
-                    font-size: 18px;
-                }
-            }
         }
         #testimonialContainer::-webkit-scrollbar {
             display: none;
