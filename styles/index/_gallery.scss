@@ -1,0 +1,87 @@
+.gallery{
+    margin-bottom: 100px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 341px 75px 243px 293px 395px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "hair1 hair2 hair2 hair3 rightbox"
+    "hair1 hair2 hair2 hair3 hair5"
+    "leftbox leftbox nails2 nails2 hair5";
+    gap: 8px;
+    zoom: 0.9;
+
+    img{
+        height: 446px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .leftBox{
+        grid-area: leftbox;
+        background-color: $primaryColor;
+        height: 300px;
+        width: 426px;
+        border-radius: 0px 0px 0px 73px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        h1{
+            color: $white;
+            font-size: 45px;
+            font-family: "bold";
+                
+        }
+    }
+    .rightBox{
+        @extend .leftBox;
+        grid-area: rightbox;
+        border-radius: 0px 73px 0px 0px;
+        line-height: 70px;
+        text-align: center;
+        width: 395px !important;
+        height: 257px;
+    }
+
+    :nth-child(3){
+        grid-area: hair1;
+        border-radius: 73px 0px 0px 0px;
+    }
+    :nth-child(4){
+        grid-area: hair2;
+    }
+    :nth-child(5){
+        grid-area: hair3;
+    }
+    :nth-child(6){
+        grid-area: nails2;
+        height: 300px;
+        width: 545px;
+    }
+    :nth-child(7){
+        grid-area: hair5;
+        height: 490px;
+        width: 395px;
+        border-radius: 0px 0px 73px 0px;
+    }
+}
+
+@media(max-width:1300px){
+    .gallery{
+        zoom: 0.6;
+    }
+}
+
+@media(max-width:1000px){
+    .gallery{
+        zoom: 0.45;
+    }
+}
+@media(max-width:1000px){
+    .gallery{
+        display: none;
+    }
+}

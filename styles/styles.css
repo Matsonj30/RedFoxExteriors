@@ -99,7 +99,7 @@ body {
 
 .landing {
   position: relative;
-  background-image: url("../../images/heroImageDark.png");
+  background-image: url("../../images/heroImageDark.webp");
   height: -moz-fit-content;
   height: fit-content;
   background-size: cover;
@@ -741,6 +741,83 @@ body {
     transform: translateX(-3px);
   }
 }
+.gallery {
+  margin-bottom: 100px;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 341px 75px 243px 293px 395px;
+  grid-template-rows: auto;
+  grid-template-areas: "hair1 hair2 hair2 hair3 rightbox" "hair1 hair2 hair2 hair3 hair5" "leftbox leftbox nails2 nails2 hair5";
+  gap: 8px;
+  zoom: 0.9;
+}
+.gallery img {
+  height: 446px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.gallery .leftBox, .gallery .rightBox {
+  grid-area: leftbox;
+  background-color: #C2272D;
+  height: 300px;
+  width: 426px;
+  border-radius: 0px 0px 0px 73px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gallery .leftBox h1, .gallery .rightBox h1 {
+  color: #FAFAFA;
+  font-size: 45px;
+  font-family: "bold";
+}
+.gallery .rightBox {
+  grid-area: rightbox;
+  border-radius: 0px 73px 0px 0px;
+  line-height: 70px;
+  text-align: center;
+  width: 395px !important;
+  height: 257px;
+}
+.gallery :nth-child(3) {
+  grid-area: hair1;
+  border-radius: 73px 0px 0px 0px;
+}
+.gallery :nth-child(4) {
+  grid-area: hair2;
+}
+.gallery :nth-child(5) {
+  grid-area: hair3;
+}
+.gallery :nth-child(6) {
+  grid-area: nails2;
+  height: 300px;
+  width: 545px;
+}
+.gallery :nth-child(7) {
+  grid-area: hair5;
+  height: 490px;
+  width: 395px;
+  border-radius: 0px 0px 73px 0px;
+}
+
+@media (max-width: 1300px) {
+  .gallery {
+    zoom: 0.6;
+  }
+}
+@media (max-width: 1000px) {
+  .gallery {
+    zoom: 0.45;
+  }
+}
+@media (max-width: 1000px) {
+  .gallery {
+    display: none;
+  }
+}
 .contactUsTitle {
   display: flex;
   flex-wrap: wrap;
@@ -977,7 +1054,7 @@ body {
   }
 }
 .contactForm {
-  background-image: url("/images/shinglesBackground.png");
+  background-image: url("/images/shinglesBackground.webp");
   background-attachment: fixed;
   height: -moz-fit-content;
   height: fit-content;
@@ -1071,7 +1148,7 @@ body {
 }
 
 .newPageLanding {
-  background-image: url("../images/heroImageDark.png");
+  background-image: url("../images/heroImageDark.webp");
   background-attachment: fixed;
   width: 100%;
   height: -moz-fit-content;
