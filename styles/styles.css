@@ -1187,7 +1187,7 @@ body {
 .navigationBar img {
   padding-left: 30px;
   width: 106px;
-  height: auto;
+  height: 84px;
 }
 .navigationBar a {
   text-decoration: none;
@@ -1455,7 +1455,7 @@ footer .logoAndDescription p {
 }
 footer .logoAndDescription img {
   width: 106px;
-  height: auto;
+  height: 84px;
 }
 footer .hours .fa {
   padding-right: 5px;
