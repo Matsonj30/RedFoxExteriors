@@ -26,7 +26,8 @@ body {
 }
 
 .primaryButton {
-  background-color: #C2272D;
+  background: rgb(194, 39, 45);
+  background: linear-gradient(165deg, rgb(194, 39, 45) 50%, rgb(210, 87, 49) 100%);
   border: none;
   border-radius: 30px;
   color: #FAFAFA;
@@ -38,7 +39,7 @@ body {
 }
 
 .primaryButton:hover {
-  background-color: #9b1f23;
+  filter: brightness(0.9);
 }
 
 .secondaryButton {

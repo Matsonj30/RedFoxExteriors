@@ -50,7 +50,8 @@ body{
 }
 
 .primaryButton{
-  background-color: $primaryColor;
+  background: rgb(194,39,45);
+  background: linear-gradient(165deg, rgba(194,39,45,1) 50%, rgba(210,87,49,1) 100%);
   border: none;
   border-radius: 30px;
   color: $white;
@@ -61,7 +62,7 @@ body{
   font-family: "bold";
 }
 .primaryButton:hover{
-  background-color: $primaryDark;
+  filter: brightness(0.9);
 }
 .secondaryButton{
   background-color: transparent;
