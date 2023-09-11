@@ -10,7 +10,7 @@
             height: 84px;
    
         }
-        a{
+        a, p{
             text-decoration: none;
             cursor: pointer;
             button{
@@ -77,7 +77,7 @@
                         display: none
                     }
                     
-                    a{
+                    a, p{
                         font-family: "bold";
                         text-decoration: none;
                         font-size: 20px;
@@ -92,7 +92,7 @@
                 }
             }
         }
-        a{
+        a, p{
             button{
                 letter-spacing: 1px;
                 .fa{
@@ -164,7 +164,7 @@
             align-self: flex-start;
             
         }
-        a{
+        a, p{
             button{
                 display: unset;
             }
@@ -199,7 +199,7 @@
                     padding: 0px 20px;
                     padding-bottom: 0px;
                     border: none;
-                    a{
+                    a, p{
                         font-size: 20px;
                         color: $white;
                         letter-spacing: 1px;

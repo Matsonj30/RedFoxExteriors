@@ -1189,11 +1189,11 @@ body {
   width: 106px;
   height: 84px;
 }
-.navigationBar a {
+.navigationBar a, .navigationBar p {
   text-decoration: none;
   cursor: pointer;
 }
-.navigationBar a button {
+.navigationBar a button, .navigationBar p button {
   display: none;
   font-size: 20px;
   font-family: "bold";
@@ -1254,17 +1254,17 @@ body {
 .navigationBar #menu ul li .fa {
   display: none;
 }
-.navigationBar #menu ul li a {
+.navigationBar #menu ul li a, .navigationBar #menu ul li p {
   font-family: "bold";
   text-decoration: none;
   font-size: 20px;
   color: #FAFAFA;
   letter-spacing: 2px;
 }
-.navigationBar a button {
+.navigationBar a button, .navigationBar p button {
   letter-spacing: 1px;
 }
-.navigationBar a button .fa {
+.navigationBar a button .fa, .navigationBar p button .fa {
   transform: translateY(4px);
   font-size: 25px;
 }
@@ -1325,7 +1325,7 @@ body {
   .navigationBar img {
     align-self: flex-start;
   }
-  .navigationBar a button {
+  .navigationBar a button, .navigationBar p button {
     display: unset;
   }
   .navigationBar .navSocials {
@@ -1364,7 +1364,7 @@ body {
     padding-bottom: 0px;
     border: none;
   }
-  .navigationBar #menu ul li a {
+  .navigationBar #menu ul li a, .navigationBar #menu ul li p {
     font-size: 20px;
     color: #FAFAFA;
     letter-spacing: 1px;
