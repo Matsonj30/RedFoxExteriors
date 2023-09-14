@@ -7,8 +7,9 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-position: center -150px;
+    background-position: center 0px;
     background-attachment: fixed;
+
     .textContent{
  
         display: flex;
@@ -89,6 +90,7 @@
 
 @media(min-width:850px){
     .landing{
+
         .textContent{
             margin-top: 100px;
             .title{
@@ -116,6 +118,11 @@
 
 }
 
+@media(min-width:1000px){
+    .landing{
+        background-position: center -100px;
+    }
+}
 @keyframes jiggle{
     0%{
         transform: translateY(0px);

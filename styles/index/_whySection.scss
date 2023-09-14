@@ -53,7 +53,10 @@
                 align-items: center;
                 justify-content: center;
                 text-align: unset;
-                
+                img{
+                    width: 300px;
+                    height: 300px;
+                }
                 .right{
                     order: 1;
                     margin-left: 65px;

@@ -1,7 +1,7 @@
 @import '../index/aboutSection';
 
 .contactForm{
-    background-image: url("/images/shinglesBackground.webp");
+    background-image: url("/images/houseOutsideDark.png");
     background-attachment: fixed;
     height: fit-content;
     background-size: cover;
@@ -80,7 +80,7 @@
             border: none;
             margin-bottom: 10px;
             padding: 2px 2px;
-            font-size: 14px;
+            font-size: 18px;
         }
         textarea{
             resize: none;
@@ -90,7 +90,7 @@
             height: 150px;
             border-radius: 5px;
             padding: 2px 2px;
-            font-size: 14px;
+            font-size: 18px;
         }
         textarea:focus{
             outline: none !important;

@@ -108,7 +108,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-position: center -150px;
+  background-position: center 0px;
   background-attachment: fixed;
 }
 .landing .textContent {
@@ -196,6 +196,11 @@ body {
     padding-bottom: 20px;
   }
 }
+@media (min-width: 1000px) {
+  .landing {
+    background-position: center -100px;
+  }
+}
 @keyframes jiggle {
   0% {
     transform: translateY(0px);
@@ -247,6 +252,10 @@ body {
     align-items: center;
     justify-content: center;
     text-align: unset;
+  }
+  .whyRedFox .whyReasons .reason img {
+    width: 300px;
+    height: 300px;
   }
   .whyRedFox .whyReasons .reason .right {
     order: 1;
@@ -691,15 +700,14 @@ body {
   transform: translate(0px, -3px);
 }
 .redFoxServices .scrollContainer #cardContainer::-webkit-scrollbar {
-  background-color: #FAFAFA;
-  height: 10px;
+  height: 15px;
 }
 .redFoxServices .scrollContainer #cardContainer::-webkit-scrollbar-track {
-  background-color: rgb(216, 154, 154);
+  background-color: #111111;
 }
 .redFoxServices .scrollContainer #cardContainer::-webkit-scrollbar-thumb {
-  background-color: #C2272D;
-  border-radius: 10px;
+  background-color: #FAFAFA;
+  border-radius: 5px;
 }
 
 @media (min-width: 450px) {
@@ -708,7 +716,6 @@ body {
     margin-bottom: 15px;
   }
   .redFoxServices .scrollContainer #cardContainer::-webkit-scrollbar {
-    background-color: #FAFAFA;
     height: 10px;
     display: none;
   }
@@ -1058,7 +1065,7 @@ body {
   }
 }
 .contactForm {
-  background-image: url("/images/shinglesBackground.webp");
+  background-image: url("/images/houseOutsideDark.png");
   background-attachment: fixed;
   height: -moz-fit-content;
   height: fit-content;
@@ -1124,7 +1131,7 @@ body {
   border: none;
   margin-bottom: 10px;
   padding: 2px 2px;
-  font-size: 14px;
+  font-size: 18px;
 }
 .contactForm .contactPageForm textarea {
   resize: none;
@@ -1134,7 +1141,7 @@ body {
   height: 150px;
   border-radius: 5px;
   padding: 2px 2px;
-  font-size: 14px;
+  font-size: 18px;
 }
 .contactForm .contactPageForm textarea:focus {
   outline: none !important;
