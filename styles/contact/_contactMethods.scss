@@ -1,54 +1,74 @@
-.contactInformation{
+.contactInfo{
+    margin-top: 50px;
+    background-image: url("/images/houseOutsideDark.png");
+    background-attachment: fixed;
+    background-size: cover;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: center;
-    width: 100%;
-    background-color: $white;
-    margin-top: 100px;
 
-    .contactMethod{
-        width: 350px;
-        height: 300px;
-        background-color: $white;
+    .contactMethods{
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        box-shadow: 0px 7px 60px -30px rgba(0,0,0,0.5);
-        cursor: pointer;
-        text-decoration: none;
-        margin: 30px 5px;
-       
-        .fa{
-            width: 70px;
-            height: 70px;
-            background-color: $primaryColor;
+        .contactMethod{
+            background-color: $white;
+            width: 300px;
+            height: 145px;
+            margin: 20px 5px;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            color: $white;
-            font-size: 30px;
+            flex-direction: column;
             border-radius: 5px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-        b{
-            color: $black;
-            font-family: "bold";
-            font-size: 25px;
-        }
-        p{
-            color: $black;
-            font-size: 18px;
+            
+            .methodTitle{
+                display: flex;
+                height: fit-content;
+                align-items: center;
+                margin: 5px 20px;
+                p{
+                    font-family: "bold";
+                    font-size: 25px;
+                }
+                .fa{
+                    font-size: 30px;
+                    margin-right: 10px;
+                    color: $primaryColor;
+                }
+            }
+            .details{
+                margin-left: 20px;
+                transform: translateY(-5px);
+                p{
+                    font-size: 20px;
+                }
+                .time{
+                    display: flex;
+    
+                    b{
+                    font-size: 20px;
+                     width: 85px;
+                     margin-right: 20px;
+                    }
+                }
+    
+                a{
+                    text-decoration: none;
+                    color: $primaryColor;
+                    font-family: "bold";
+                    font-size: 20px;
+                }
+            }
         }
     }
+  
 }
 
-@media(min-width:600px){
-
-
-    .contactInformation{
-        .contactMethod{
-            margin: 30px 30px;
+@media(min-width:1100px){
+    .contactInfo{
+        .contactMethods{
+            margin-right: 40px;
         }
     }
 }

@@ -1,30 +1,23 @@
 @import '../index/aboutSection';
 
 .contactForm{
-    background-image: url("/images/houseOutsideDark.png");
-    background-attachment: fixed;
-    height: fit-content;
-    background-size: cover;
-    margin-top: 50px;
-    display: flex;
-   
+    padding: 10px 10px;
+    height: fit-content;   
     flex-wrap: wrap;
     justify-content: center;
-    .wrapper{
-        width: 100%;
 
-    }
     h1{
         color: $white;
         font-size: 50px;
-        text-align: center;
         line-height: 60px;
         font-family: "bold";
-        margin-top: 15px;
-        
+        text-align: center;
     }
     span{
-        color: $primaryColor;
+        background-image: linear-gradient(90deg, rgba(194,39,45,1) 30%, rgba(210,87,49,1) 100%);
+        background-clip: text;
+        color: transparent !important;
+        font-family: "bold";
     }
 
 
@@ -33,7 +26,7 @@
        
         color: $white;
         max-width: 1500px;
-        padding: 10px 10px;
+     
         border-radius: 10px;
 
         p{
@@ -111,3 +104,11 @@
 }
 
 
+@media(min-width:1000px){
+    .contactForm{
+        h1{
+            text-align: unset;
+        }
+    }
+
+}

@@ -81,7 +81,7 @@
     <img src="/images/houseOutside.webp" alt="image">
     <div class="contactText">
         <p>At Red Fox Exteriors, we prioritize the satisfaction and peace of mind of our customers. Every question, every concern, and every project is met with our unwavering commitment to excellence. If you're in need of guidance, or simply want to discuss your exterior needs, our professional team is just a call or click away. <br> <br> Please don’t hesitate to reach out through our online inquiry form or by phone. A member of our courteous staff will respond promptly. At Red Fox Exteriors, we're eager to serve you and bring the best to your home.</p>
-        <!-- <a href="https://www.google.com/maps/place/148+Wildrose+Cres,+Strathmore,+AB+T1P+1M9/@51.0438077,-113.4257178,17z/data=!3m1!4b1!4m6!3m5!1s0x5373cd03e38d966f:0x7311d664b02a6acd!8m2!3d51.0438044!4d-113.4208469!16s%2Fg%2F11t1d4pqq3?entry=ttu"><button class=primaryButton>Our Location</button></a> -->
+
     </div>
 
 </div>
@@ -90,119 +90,159 @@
 <!-----------------------------------ContactIntro--------------------------------------->
 <!-------------------------------------------------------------------------------------->
 
-<!-------------------------------------------------------------------------------------->
-<!-----------------------------------ContactDetail--------------------------------------->
-<!-------------------------------------------------------------------------------------->
-
-<div class="contactInformation">
-
-    <a href="tel:403-325-0765" class="contactMethod">
-        <div class="fa fa-phone">
-
-        </div>
-        <b>Phone</b>
-        <p>+1 403-325-0765</p>
-    </a>
-
-    <a href="mailto:redfoxexteriors@gmail.com" class="contactMethod">
-        <div class="fa fa-envelope">
-
-        </div>
-        <b>E-Mail</b>
-        <p>redfoxexteriors@gmail.com</p>
-    </a>
-
-
-    <a href=https://www.facebook.com/redfoxexteriors.strathmore.1 class="contactMethod">
-        <div class="fa fa-facebook">
-
-        </div>
-        <b>Facebook</b>
-        <p>facebook.com/redfoxexteriors.strathmore.1</p>
-    </a>
-
-
-
-
-</div>
-
-
-
-<!-------------------------------------------------------------------------------------->
-<!-----------------------------------ContactDetail--------------------------------------->
-<!-------------------------------------------------------------------------------------->
 
 
 <!-------------------------------------------------------------------------------------->
 <!-----------------------------------Form----------------------------------------------->
 <!-------------------------------------------------------------------------------------->
 
-<div class="contactForm">
-    <div class="wrapper">
-         <h1><span>Fill</span> Out The Form Below</h1>
-    </div>
-
-    <form name="contact"  method="post" data-netlify="true" onSubmit="submit" class="contactPageForm">
-    
-    
-        <p>Information</p>
-    
-        <input class=details placeholder="Full Name" type="text" name="name" />
-        <input class=details placeholder="E-mail" type="email" name="email" />
-        <input class=details placeholder="Phone #" type="tel" name="phone" />
+<div class="contactInfo">
+    <div class="contactMethods">
+        <div class="contactMethod">
+            <div class="methodTitle">
+                <div class="fa fa-phone"></div>
+                <p>CALL US</p>
+           
+            </div>
+            <div class="details">
+                <p>403-325-0765</p>
+                <a href= "tel:403-325-0765">Dial Now</a>
+            </div>
+        </div>
         
-    
-        <p>House Address</p>
-    
-        <input class=details placeholder="Street" type="text" name="street" />
-        <input class=details placeholder="City" type="text" name="city" />
-        <input class=details placeholder="Postal Code" type="text" name="postalCode" />
-    
-    
-        <p>Services Required</p>
-    
-        <div class="checkBox">
-            
+        
+        <div class="contactMethod">
+            <div class="methodTitle">
+                <div class="fa fa-map-marker"></div>
+                <p>LOCATION</p>
+              
+            </div>
+            <div class="details">
+                <p>148 Wildrose Cres, Strathmore, AB <a href="https://www.google.com/maps/place/Red+Fox+Exteriors,+148+Wildrose+Cres,+Strathmore,+AB+T1P+1M9/@51.043835,-113.420768,16z/data=!4m6!3m5!1s0x5373cd7e46c083a5:0x52a72c36797cede2!8m2!3d51.0438348!4d-113.4207684!16s%2Fg%2F11nxfr6xkk?hl=en&gl=CA">See Our Location</a></p>
+            </div>
         </div>
-    
-        <div class="checkboxes">
-            <input class="box" type="checkbox" id="scales" name="sheeting"/>
-            <label for="sheeting">Sheeting</label>
-    
-            <input class="box" type="checkbox" id="siding" name="siding"/>
-            <label for="siding">Siding</label>
+        
+        <div class="contactMethod">
+            <div class="methodTitle">
+                <div class="fa fa-calendar"></div>
+                <p>HOURS</p>
+        
+            </div>
+            <div class="details">
+                <div class="time">
+                    <b>MON-FRI</b>
+                    <p>6:15AM - 8:15PM</p>
+                </div>
+                <div class="time">
+                    <b>SATURDAY</b>
+                    <p>9:00AM - 12:15PM</p>
+                </div>
+                <div class="time">
+                    <b>SUNDAY</b>
+                    <p>CLOSED</p>
+                </div>
+               
             
-            <input class="box" type="checkbox" id="cleanup" name="cleanup"/>
-            <label for="cleanup">Cleanup</label>
-            
-            <input class="box" type="checkbox" id="demolition" name="demolition"/>
-            <label for="demolition">Demolition</label>
-            
-            <input class="box" type="checkbox" id="shingles" name="shingles"/>
-            <label for="shingles">Shingles</label>
-            
-            <input class="box" type="checkbox" id="fencing" name="fencing"/>
-            <label for="fencing">Fencing</label>
-            
-            <input class="box" type="checkbox" id="decks" name="decks"/>
-            <label for="decks">Decks</label>
-            
-            <input class="box" type="checkbox" id="other" name="other"/>
-            <label for="other">Other</label>
-            
+            </div>
         </div>
-       
-    
-        <p>Additional Information</p>
-        <input class=referral placeholder="How Did You Hear About Us?" type="text" name="HowTheyHeardAboutYou" />
-        <textarea id="additionalInfo" name="additionalInfo" placeholder="Additional details or a summary of the job you are looking for specifically..."></textarea>
-        <div class="wrapper">
-            <button class="primaryButton" type="submit">Submit</button>
+        <div class="contactMethod">
+            <div class="methodTitle">
+                <div class="fa fa-envelope"></div>
+                <p>E-MAIL US</p>
+              
+            </div>
+            <div class="details">
+                <p>redfoxexteriors@gmail.com</p>
+                <a href="mailto:redfoxexteriors@gmail.com">Send Us A Message</a>
+            </div>
         </div>
-    
-    </form>
+        <div class="contactMethod">
+            <div class="methodTitle">
+                <div class="fa fa-facebook"></div>
+                <p>OUR FACEBOOK</p>
+              
+            </div>
+            <div class="details">
+                <p>www.facebook.com/
+                <br>
+                redfoxexteriors.strathmore.1</p>
+                <a href="https://www.facebook.com/redfoxexteriors.strathmore.1">Join Us on Facebook</a>
+          
+            </div>
+        </div>
+    </div>
+   
 
+    <div class="contactForm">
+      
+        <h1><span>Contact</span> Us Here</h1>
+     
+    
+        <form name="contact"  method="post" data-netlify="true" onSubmit="submit" class="contactPageForm">
+        
+        
+            <p>Information</p>
+        
+            <input class=details placeholder="Full Name" type="text" name="name" />
+            <input class=details placeholder="E-mail" type="email" name="email" />
+            <input class=details placeholder="Phone #" type="tel" name="phone" />
+            
+        
+            <p>House Address</p>
+        
+            <input class=details placeholder="Street" type="text" name="street" />
+            <input class=details placeholder="City" type="text" name="city" />
+            <input class=details placeholder="Postal Code" type="text" name="postalCode" />
+        
+        
+            <p>Services Required</p>
+        
+            <div class="checkBox">
+                
+            </div>
+        
+            <div class="checkboxes">
+                <input class="box" type="checkbox" id="scales" name="sheeting"/>
+                <label for="sheeting">Sheeting</label>
+        
+                <input class="box" type="checkbox" id="siding" name="siding"/>
+                <label for="siding">Siding</label>
+                
+                <input class="box" type="checkbox" id="cleanup" name="cleanup"/>
+                <label for="cleanup">Cleanup</label>
+                
+                <input class="box" type="checkbox" id="demolition" name="demolition"/>
+                <label for="demolition">Demolition</label>
+                
+                <input class="box" type="checkbox" id="shingles" name="shingles"/>
+                <label for="shingles">Shingles</label>
+                
+                <input class="box" type="checkbox" id="fencing" name="fencing"/>
+                <label for="fencing">Fencing</label>
+                
+                <input class="box" type="checkbox" id="decks" name="decks"/>
+                <label for="decks">Decks</label>
+                
+                <input class="box" type="checkbox" id="other" name="other"/>
+                <label for="other">Other</label>
+                
+            </div>
+           
+        
+            <p>Additional Information</p>
+            <input class=referral placeholder="How Did You Hear About Us?" type="text" name="HowTheyHeardAboutYou" />
+            <textarea id="additionalInfo" name="additionalInfo" placeholder="Additional details or a summary of the job you are looking for specifically..."></textarea>
+            <div class="wrapper">
+                <button class="primaryButton" type="submit">Submit</button>
+            </div>
+        
+        </form>
+    
+    </div>
 </div>
+
+
+
 
 
 
@@ -214,32 +254,7 @@
 <!-------------------------------------------------------------------------------------->
 
 
-<!-------------------------------------------------------------------------------------->
-<!-----------------------------------Gallery-------------------------------------------->
-<!-------------------------------------------------------------------------------------->
-<div class="wrapper">
-    <div class="gallery">
-        <div class="rightBox">
-            <h1>100% Satisfaction Guarenteed</h1>
-        </div>
-
-        <div class="leftBox">
-            <h1>Quick.<br>Reliable.<br>Affordable.</h1>
-
-
-        </div>
-        <img src="/images/building.webp" alt="nails">
-        <img src="/images/deck2.webp" alt="haircut">
-        <img src="/images/tiling.webp" alt="haircut">
-        <img src="/images/fence2.webp" alt="haircut">
-        <img src="/images/concrete2.webp" alt="haircut">
-    </div>
-
-</div>
-
-<!-------------------------------------------------------------------------------------->
-<!-----------------------------------Gallery-------------------------------------------->
-<!-------------------------------------------------------------------------------------->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.5009054473617!2d-113.42334332309129!3d51.043838144461766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5373cd7e46c083a5%3A0x52a72c36797cede2!2sRed%20Fox%20Exteriors!5e0!3m2!1sen!2sca!4v1694720920052!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
 

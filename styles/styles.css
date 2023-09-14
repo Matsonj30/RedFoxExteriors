@@ -98,6 +98,10 @@ body {
   padding-bottom: 15px;
 }
 
+iframe {
+  width: 100%;
+}
+
 .landing {
   position: relative;
   background-image: url("../../images/heroImageDark.webp");
@@ -879,52 +883,72 @@ body {
     justify-content: unset;
   }
 }
-.contactInformation {
+.contactInfo {
+  margin-top: 50px;
+  background-image: url("/images/houseOutsideDark.png");
+  background-attachment: fixed;
+  background-size: cover;
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: center;
-  width: 100%;
-  background-color: #FAFAFA;
-  margin-top: 100px;
 }
-.contactInformation .contactMethod {
-  width: 350px;
-  height: 300px;
-  background-color: #FAFAFA;
+.contactInfo .contactMethods {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0px 7px 60px -30px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  text-decoration: none;
-  margin: 30px 5px;
 }
-.contactInformation .contactMethod .fa {
-  width: 70px;
-  height: 70px;
-  background-color: #C2272D;
+.contactInfo .contactMethods .contactMethod {
+  background-color: #FAFAFA;
+  width: 300px;
+  height: 145px;
+  margin: 20px 5px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #FAFAFA;
-  font-size: 30px;
+  flex-direction: column;
   border-radius: 5px;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
-.contactInformation .contactMethod b {
-  color: #111111;
+.contactInfo .contactMethods .contactMethod .methodTitle {
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  align-items: center;
+  margin: 5px 20px;
+}
+.contactInfo .contactMethods .contactMethod .methodTitle p {
   font-family: "bold";
   font-size: 25px;
 }
-.contactInformation .contactMethod p {
-  color: #111111;
-  font-size: 18px;
+.contactInfo .contactMethods .contactMethod .methodTitle .fa {
+  font-size: 30px;
+  margin-right: 10px;
+  color: #C2272D;
+}
+.contactInfo .contactMethods .contactMethod .details, .contactInfo .contactMethods .contactMethod .contactForm .contactPageForm .referral, .contactForm .contactPageForm .contactInfo .contactMethods .contactMethod .referral {
+  margin-left: 20px;
+  transform: translateY(-5px);
+}
+.contactInfo .contactMethods .contactMethod .details p, .contactInfo .contactMethods .contactMethod .contactForm .contactPageForm .referral p, .contactForm .contactPageForm .contactInfo .contactMethods .contactMethod .referral p {
+  font-size: 20px;
+}
+.contactInfo .contactMethods .contactMethod .details .time, .contactInfo .contactMethods .contactMethod .contactForm .contactPageForm .referral .time, .contactForm .contactPageForm .contactInfo .contactMethods .contactMethod .referral .time {
+  display: flex;
+}
+.contactInfo .contactMethods .contactMethod .details .time b, .contactInfo .contactMethods .contactMethod .contactForm .contactPageForm .referral .time b, .contactForm .contactPageForm .contactInfo .contactMethods .contactMethod .referral .time b {
+  font-size: 20px;
+  width: 85px;
+  margin-right: 20px;
+}
+.contactInfo .contactMethods .contactMethod .details a, .contactInfo .contactMethods .contactMethod .contactForm .contactPageForm .referral a, .contactForm .contactPageForm .contactInfo .contactMethods .contactMethod .referral a {
+  text-decoration: none;
+  color: #C2272D;
+  font-family: "bold";
+  font-size: 20px;
 }
 
-@media (min-width: 600px) {
-  .contactInformation .contactMethod {
-    margin: 30px 30px;
+@media (min-width: 1100px) {
+  .contactInfo .contactMethods {
+    margin-right: 40px;
   }
 }
 .aboutRedFox {
@@ -1065,34 +1089,29 @@ body {
   }
 }
 .contactForm {
-  background-image: url("/images/houseOutsideDark.png");
-  background-attachment: fixed;
+  padding: 10px 10px;
   height: -moz-fit-content;
   height: fit-content;
-  background-size: cover;
-  margin-top: 50px;
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-.contactForm .wrapper {
-  width: 100%;
 }
 .contactForm h1 {
   color: #FAFAFA;
   font-size: 50px;
-  text-align: center;
   line-height: 60px;
   font-family: "bold";
-  margin-top: 15px;
+  text-align: center;
 }
 .contactForm span {
-  color: #C2272D;
+  background-image: linear-gradient(90deg, rgb(194, 39, 45) 30%, rgb(210, 87, 49) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent !important;
+  font-family: "bold";
 }
 .contactForm .contactPageForm {
   color: #FAFAFA;
   max-width: 1500px;
-  padding: 10px 10px;
   border-radius: 10px;
 }
 .contactForm .contactPageForm p {
@@ -1158,6 +1177,11 @@ body {
   font-family: "bold";
 }
 
+@media (min-width: 1000px) {
+  .contactForm h1 {
+    text-align: unset;
+  }
+}
 .newPageLanding {
   background-image: url("../images/heroImageDark.webp");
   background-attachment: fixed;
@@ -1169,6 +1193,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-position: center -250px;
 }
 .newPageLanding .text {
   display: flex;
