@@ -112,7 +112,8 @@ iframe {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-position: center 0px;
+  background-position: 0px;
+  background-repeat: no-repeat;
 }
 .landing .textContent {
   display: flex;
@@ -1183,7 +1184,6 @@ iframe {
 }
 .newPageLanding {
   background-image: url("../images/heroImageDark.webp");
-  background-attachment: fixed;
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
@@ -1193,6 +1193,7 @@ iframe {
   align-items: center;
   background-position: center -250px;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .newPageLanding .text {
   display: flex;

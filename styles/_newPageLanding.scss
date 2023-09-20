@@ -1,6 +1,5 @@
 .newPageLanding{
     background-image: url('../images/heroImageDark.webp');
-    background-attachment: fixed;
     width: 100%;
     height: fit-content;
     height: 350px;
@@ -9,6 +8,7 @@
     align-items: center;
     background-position: center -250px;
     background-size: cover;
+    background-repeat: no-repeat;
     .text{
         display: flex;
         justify-content: center;
