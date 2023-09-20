@@ -113,7 +113,6 @@ iframe {
   align-items: center;
   width: 100%;
   background-position: center 0px;
-  background-attachment: fixed;
 }
 .landing .textContent {
   display: flex;
@@ -1188,12 +1187,12 @@ iframe {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
-  background-size: cover;
   height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-position: center -250px;
+  background-size: cover;
 }
 .newPageLanding .text {
   display: flex;
