@@ -104,7 +104,7 @@ iframe {
 
 .landing {
   position: relative;
-  background-image: url("../../images/heroImageDark.webp");
+  background-image: url("../../images/heroImageNew.png");
   height: -moz-fit-content;
   height: fit-content;
   background-size: cover;
@@ -1183,7 +1183,7 @@ iframe {
   }
 }
 .newPageLanding {
-  background-image: url("../images/heroImageDark.webp");
+  background-image: url("../images/heroImageNew.png");
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
