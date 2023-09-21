@@ -2,11 +2,11 @@
     background-image: url('../images/heroImageNew.webp');
     width: 100%;
     height: fit-content;
-    height: 350px;
+    min-height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-position: center -250px;
+
     background-size: cover;
     background-repeat: no-repeat;
     .text{
