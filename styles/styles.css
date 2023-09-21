@@ -1451,6 +1451,7 @@ footer .section ul {
 footer .section ul li {
   padding: 5px 0px;
   transition: 0.5s ease-in-out;
+  font-size: 18px;
 }
 footer .section ul li a {
   text-decoration: none;
@@ -1459,6 +1460,9 @@ footer .section ul li a {
 }
 footer .section ul li .fa {
   color: #FAFAFA;
+}
+footer .section ul li p {
+  font-size: 18px;
 }
 footer .section ul li:hover {
   opacity: 0.4;
