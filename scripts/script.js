@@ -29,7 +29,7 @@ function scrollToDiv(location, pageURL = null){
         document.getElementById(location).scrollIntoView({behavior: "smooth", block: "center"});
     } //On correct page
     else{
-        window.location.href = 'redfoxexteriors.ca/index' + '#' + location;
+        window.location.href = '/index' + '#' + location;
        // document.getElementById(location).scrollIntoView({behavior: "smooth", block: "center"});
     }
     burgerMenu(true)
